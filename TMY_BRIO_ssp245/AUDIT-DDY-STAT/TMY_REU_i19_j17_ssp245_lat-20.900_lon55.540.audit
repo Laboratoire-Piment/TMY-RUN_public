@@ -1,0 +1,637 @@
+ -EnergyPlus Weather Converter V8.1.0.005
+ -Input File Type=CUSTOM, with FileName=C:\Users\trandri1\work\TMY-RUN_public\TMY_BRIO_ssp245\CSV_EPW\TMY_REU_i19_j17_ssp245_lat-20.900_lon55.540.csv
+ -Out of Range Data items will NOT be corrected.
+ -***Definitions file=c:\users\trandri1\work\tmy-run_public\tmy_brio_ssp245\csv_epw\tmy_reu_i19_j17_ssp245_lat-20.900_lon55.540.def
+ Severe ** &location, key=City, entered # args >1, key is ignored.
+ **  processing file="c:\users\trandri1\work\tmy-run_public\tmy_brio_ssp245\csv_epw\tmy_reu_i19_j17_ssp245_lat-20.900_lon55.540.def".
+ Def (Definitions) Location Processed Status
+ From Reading Definitions File, file=c:\users\trandri1\work\tmy-run_public\tmy_brio_ssp245\csv_epw\tmy_reu_i19_j17_ssp245_lat-20.900_lon55.540.def
+ Location Latitude (InLat)	    -20.90
+ Location Longitude (InLong)	     55.54
+ Location Time Zone (InTime)	      4.00
+ Location Elevation (InElev)	     48.00
+ Location WMO (InWMO)	61996 
+ Location Country (Country)	REU                 
+ Def (Definitions) Weather Data Processed Status
+ From Reading Definitions File, file=c:\users\trandri1\work\tmy-run_public\tmy_brio_ssp245\csv_epw\tmy_reu_i19_j17_ssp245_lat-20.900_lon55.540.def
+ Weather Data - Number Intervals per Hour	    1
+ Weather Data - Time Hour Offset	      0.00
+ Weather Data - Input File Type	custom    
+ Def (Definitions) Miscellaneous Data Processed Status
+ From Reading Definitions File, file=c:\users\trandri1\work\tmy-run_public\tmy_brio_ssp245\csv_epw\tmy_reu_i19_j17_ssp245_lat-20.900_lon55.540.def
+ Misc Data - Comments 1	First version of the TMY-stations on TMY-RUN project 2025                                                                                                                                                                                                                                                                                                                                                       
+ Misc Data - Source Data	TMY-RUN 2025                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+ Def (Definitions) Data Control Data Processed Status
+ Note: Data Control only used in "Custom" input formats
+ From Reading Definitions File, file=c:\users\trandri1\work\tmy-run_public\tmy_brio_ssp245\csv_epw\tmy_reu_i19_j17_ssp245_lat-20.900_lon55.540.def
+ Data Control - # Records to Skip	    2
+ -***Processing Definitions file(s) complete.
+ 
+Note ** Definitions taken from associated "def" file.
+ Warning ** Did not find WMO for matching with Design Conditions, looking for WMO=61996
+ Illegal Data Element Name="ghi_infrared", will be skipped
+ Illegal Data Element Name="liquid_precip_quantity", will be skipped
+ Custom File Processing Details
+ Custom File, Number of Fields=	35
+ Delimited input, Delimiter Character=","
+ Input Name	Skip Field (t/f)	Used by EnergyPlus	Conversion Factor	Field (from) First Record (before conversion	minimum value	maximum value	missing value
+ month	F	y	1.000	[1]	1	12	9999.000
+ day	F	y	1.000	[1]	1	31	99990.00
+ year	F	n	1.000	[2017]	N/A	N/A	999900.0
+ hour	F	y	1.000	[1]	0	24	1.000E+09
+ minute	F	n	1.000	[0]	N/A	N/A	999.000
+ datasource	F	n	1.000	[]	N/A	N/A	999.000
+ drybulb	F	y	1.000	[25.378]	>-70 C	<70 C	99.900
+ dewpoint	F	y	1.000	[22.174]	>-70 C	<70 C	99.900
+ relhum	F	y	1.000	[83.200]	0 %	110 %	999.000
+ atmos_pressure	F	y	1.000	[100920.040]	31000 Pa	120000 Pa	999999.0
+ exthorrad	F	n	1.000	[0.000]	0 Wh/m2	1415 Wh/m2	9999.000
+ extdirrad	F	n	1.000	[1413.982]	0 Wh/m2	1415 Wh/m2	9999.000
+ ghi_infrared	T	*	1.000
+ glohorrad	F	n	1.000	[0.000]	0 Wh/m2	1200 Wh/m2	9999.000
+ dirnorrad	F	y	1.000	[0.000]	0 Wh/m2	1100 Wh/m2	9999.000
+ difhorrad	F	y	1.000	[0.000]	0 Wh/m2	700 Wh/m2	9999.000
+ glohorillum	F	n	1.000	[0.000]	0 lux	130,000 lux	999900.0
+ dirnorillum	F	n	1.000	[0.000]	0 lux	110,000 lux	999900.0
+ difhorillum	F	n	1.000	[0.000]	0 lux	80,000 lux	999900.0
+ zenithlum	F	n	1.000	[-0.000]	0 Cd/m2	70,000 Cd/m2	9999.000
+ winddir	F	y	1.000	[999]	0 deg	360 deg	999.000
+ windspd	F	y	1.000	[2.094]	0 m/s	40 m/s	999.000
+ total_sky_cover	F	n	1.000	[8.000]	0	10	99.000
+ opaque_sky_cover	F	n	1.000	[99]	0	10	99.000
+ visibility	F	n	1.000	[9999]	0 km	160.9 km	9999.000
+ ceilhgt	F	n	1.000	[99999]	0 m	30,450 m	99999.00
+ presweathobs	F	y	1.000	[9]	0	9	9.000
+ presweathcodes	F	y	1.000	[999999999]	000000000	999999999	1.000E+09
+ precip_wtr	F	n	1.000	[1.506]	0 mm	100 mm	999.000
+ aerosol_opt_depth	F	n	1.000	[0.999]	0	.240	0.999
+ snow_depth	F	y	1.000	[0]	0 cm	150 cm	999.000
+ days_last_snow	F	n	1.000	[0]	0	88	99.000
+ albedo	F	n	1.000	[999]	>=0	1	9999.000
+ liquid_precip_depth	F	y	1.000	[1.506]	0 mm	500 mm	999.000
+ liquid_precip_quantity	T	*	1.000
+ Warning ** Global Horizontal Illuminance=131686.8 lux on date= 1/ 6 at hour=13
+ Warning ** Global Horizontal Illuminance=134140.8 lux on date= 1/23 at hour=13
+ Warning ** Global Horizontal Illuminance=133238.4 lux on date= 1/25 at hour=13
+ Warning ** Global Horizontal Illuminance=134970.0 lux on date= 1/26 at hour=13
+ Warning ** Global Horizontal Illuminance=130677.6 lux on date= 1/26 at hour=14
+ Warning ** Global Horizontal Illuminance=132042.0 lux on date= 1/28 at hour=12
+ Warning ** Global Horizontal Illuminance=137322.0 lux on date= 1/28 at hour=13
+ Warning ** Global Horizontal Illuminance=132652.8 lux on date= 1/28 at hour=14
+ Warning ** Global Horizontal Illuminance=133974.0 lux on date= 1/29 at hour=13
+ Warning ** Global Horizontal Illuminance=131113.2 lux on date= 1/30 at hour=12
+ Warning ** Global Horizontal Illuminance=136045.2 lux on date= 1/30 at hour=13
+ Warning ** Global Horizontal Illuminance=131426.4 lux on date= 1/30 at hour=14
+ Warning ** Global Horizontal Illuminance=130584.0 lux on date=11/ 1 at hour=12
+ Warning ** Global Horizontal Illuminance=130704.0 lux on date=11/ 1 at hour=13
+ Warning ** Global Horizontal Illuminance=130119.6 lux on date=11/19 at hour=11
+ Warning ** Global Horizontal Illuminance=139490.4 lux on date=11/19 at hour=12
+ Warning ** Global Horizontal Illuminance=138962.4 lux on date=11/19 at hour=13
+ Warning ** Global Horizontal Illuminance=136658.4 lux on date=11/25 at hour=12
+ Warning ** Global Horizontal Illuminance=137504.4 lux on date=11/25 at hour=13
+ Warning ** Global Horizontal Illuminance=135146.4 lux on date=11/26 at hour=12
+ Warning ** Global Horizontal Illuminance=136436.4 lux on date=11/26 at hour=13
+ Warning ** Global Horizontal Illuminance=132104.4 lux on date=11/28 at hour=11
+ Warning ** Global Horizontal Illuminance=141978.0 lux on date=11/28 at hour=12
+ Warning ** Global Horizontal Illuminance=141822.0 lux on date=11/28 at hour=13
+ Warning ** Global Horizontal Illuminance=131397.6 lux on date=11/28 at hour=14
+ Warning ** Global Horizontal Illuminance=133435.2 lux on date=11/29 at hour=11
+ Warning ** Global Horizontal Illuminance=143847.6 lux on date=11/29 at hour=12
+ Warning ** Global Horizontal Radiation=  1202.0 Wh/m² on date=11/29 at hour=13
+ Warning ** Global Horizontal Illuminance=144244.8 lux on date=11/29 at hour=13
+ Warning ** Global Horizontal Illuminance=134035.2 lux on date=11/29 at hour=14
+ Warning ** Global Horizontal Illuminance=138211.2 lux on date=12/ 9 at hour=12
+ Warning ** Global Horizontal Illuminance=139986.0 lux on date=12/ 9 at hour=13
+ Warning ** Global Horizontal Illuminance=131562.0 lux on date=12/ 9 at hour=14
+ Warning ** Global Horizontal Illuminance=140071.2 lux on date=12/10 at hour=12
+ Warning ** Global Horizontal Illuminance=141680.4 lux on date=12/10 at hour=13
+ Warning ** Global Horizontal Illuminance=134052.0 lux on date=12/10 at hour=14
+ Warning ** Global Horizontal Illuminance=130573.2 lux on date=12/15 at hour=12
+ Warning ** Global Horizontal Illuminance=132829.2 lux on date=12/15 at hour=13
+ Warning ** Global Horizontal Illuminance=135818.4 lux on date=12/23 at hour=12
+ Warning ** Global Horizontal Illuminance=138135.6 lux on date=12/23 at hour=13
+ Warning ** Global Horizontal Illuminance=130788.0 lux on date=12/23 at hour=14
+ Warning ** Global Horizontal Illuminance=131760.0 lux on date=12/31 at hour=12
+ Warning ** Global Horizontal Illuminance=135186.0 lux on date=12/31 at hour=13
+ Warning ** Missing Data Found on Source Weather Data File
+ ** Missing (and corrected) Wind Direction, Number of items= 8760
+ ** Missing (and corrected) Visibility, Number of items= 8760
+ ** Missing (and corrected) Aerosol Optical Depth, Number of items= 8760
+ ** Missing (and corrected) Opaque Sky Cover, Number of items= 8760
+ ** Missing (and corrected) Ceiling Height, Number of items= 8760
+ ** Missing (and corrected) Albedo, Number of items= 8760
+
+
+
+ - Start Date/End Date for Weather Source
+ Start Date=Jan  1; End Date=Dec 31
+
+ - Actual Data Years for Monthly Data**
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	         	 2017	 2010	 2023	 2020	 2021	 2012	 2025	 2012	 2014	 2019	 2017	 2014	
+ - ** Not all weather data sources represent contiguous years.
+ - ** Monthly data values may come from different years.
+
+ - Days per Month for Monthly Data**
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	           	 31	 28	 31	 30	 31	 30	 31	 31	 30	 31	 30	 31	
+ - ** Number of days per month seems okay.
+
+ - Data Sources should be checked for relevancy to these statistics.
+
+ Average Delta DB Change=  0.59°C ; Std Dev=  0.52°C
+ Average Delta DP Change=  0.16°C ; Std Dev=  0.33°C
+ Average Delta Relative Humidity Change=  2.85% ; Std Dev=  3.01%
+ Average Delta Wind Speed Change=  0.38m/s ; Std Dev=  0.48m/s
+ Hourly Dry Bulb temperature change trigger = minimum of   8.17°C  and  10.°C
+      8.17°C = calculated trigger based on mean change in dry-bulb temperature and standard deviation shown above
+     10.°C = trigger set by user
+
+ -Output File Type=epw, with FileName=C:\Users\trandri1\work\TMY-RUN_public\TMY_BRIO_ssp245\EPW\TMY_REU_i19_j17_ssp245_lat-20.900_lon55.540.epw
+ -Output File URL=Põ^ W69q ô^ ð7Ðõ^ Äõ^     þœ:q ô^ ð7Ðõ^  õ^ ¦—…]¸ \pÐõ^       	   põ^ U;q$      €5d°ó.p       ¼k €5däô^  õ^ «,-p€5d \øô^ ¼k ¼k    M$];q€5dõ^ ^M3p            Lõ^ ð7    ¼k         Hõ^         ô^  Z$Ôý^ Œê:qVQà,    ¼ö^ ¤¦:q õ^ põ^ U;qÐõ^ 	   põ^ TS;qU;qTS;qU;qTS;qU;qTS;q
+
+
+ Statistics for TMY_REU_i19_j17_ssp245_lat-20.900_lon55.540
+ Location -- UnknownCity - REU  
+      {S 20° 53'} {E  55° 32'} {GMT +4.0 Hours}
+ Elevation --    48m above sea level
+ Standard Pressure at Elevation -- 100750Pa
+ Data Source -- TMY-RUN 2025
+
+ -WMO Station 61996 
+
+ - Displaying Design Conditions calculated from this weather file.
+ -  The following design temperature statistics are calculated based on THIS weather file ONLY
+ -  and may not be representative of a long-term  period of record normally used for
+ -  design temperatures. Also, note that dew point temperatures are listed where 
+ -  wet-bulb temperatures are normally presented.
+
+ 	Design Stat	Coldest Month	HDB 99.6%	HDB 99%
+ 	   Units   	    {}   	   {C}   	  {C}  
+ 	  Heating  	 7	 14.2	 15.1
+
+ 	Design Stat	Hottest Month	CDB .4%	CDB 1%	CDB 2%	CDP .4%	CDP 1%	CDP 2%
+     Units   	  {C}  	  {C} 	  {C} 	  {C}  	  {C} 	  {C} 
+ 	  Cooling  	 3	 31.5	 31.2	 30.9	 24.9	 24.5	 24.2
+
+ 	Design Stat	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec
+ 	   Units   	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}
+ 	Max WS	  6.9	 13.4	  8.7	  8.8	  9.1	  7.8	  7.8	 12.6	 12.5	  9.2	  7.9	  7.1
+
+ - Heating/Cooling Degree Days/Hours calculated from this weather file are later in this report.
+
+ - Monthly Statistics for Dry Bulb temperatures °C
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	Maximum 	 31.3	 31.5	 32.2	 29.7	 29.7	 28.0	 26.9	 26.0	 27.5	 28.1	 29.5	 31.2	
+ 	 Day:Hour	26:16	10:15	26:15	 5:15	 1:15	 1:15	 2:15	24:14	26:15	20:16	29:15	29:15	
+
+ 	Minimum 	 21.6	 22.5	 21.6	 21.0	 17.4	 16.2	 13.2	 14.1	 16.2	 16.7	 18.1	 20.4	
+ 	 Day:Hour	30:07	28:08	27:08	29:08	22:08	11:08	26:08	 9:08	 3:08	21:07	 1:07	22:07	
+
+ 	Daily Avg	26.6 	26.9 	26.9 	25.3 	24.1 	21.7 	20.8 	20.7 	21.7 	22.9 	24.6 	25.8 	
+
+   - Maximum Dry Bulb temperature of  32.2°C on Mar 26
+   - Minimum Dry Bulb temperature of  13.2°C on Jul 26
+
+ - Monthly Statistics for Extreme Dry Bulb temperatures °C
+ 	  #Days  	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	Max >= 32	     	     	    1	     	     	     	     	     	     	     	     	     	
+ 	Max <=  0	     	     	     	     	     	     	     	     	     	     	     	     	
+ 	Min <=  0	     	     	     	     	     	     	     	     	     	     	     	     	
+ 	Min <=-18	     	     	     	     	     	     	     	     	     	     	     	     	
+
+ - Monthly Statistics for Dew Point temperatures °C
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	Maximum 	25.1 	24.6 	25.2 	23.6 	21.6 	20.2 	19.7 	19.9 	21.0 	19.4 	21.5 	22.7 	
+ 	 Day:Hour	14:15	25:08	23:16	 3:13	17:15	 5:15	31:08	28:15	25:14	17:15	13:07	28:07	
+
+ 	Minimum 	16.8 	19.0 	19.3 	16.7 	11.1 	10.9 	8.1  	9.7  	10.4 	12.0 	12.0 	16.1 	
+ 	 Day:Hour	28:15	23:15	20:15	29:15	22:15	19:15	25:08	20:15	19:16	21:15	 1:15	13:16	
+
+ 	Daily Avg	21.1 	22.0 	21.7 	20.3 	17.9 	15.7 	14.4 	14.8 	14.8 	15.9 	17.9 	19.8 	
+
+   - Maximum Dew Point temperature of  25.2°C on Mar 23
+   - Minimum Dew Point temperature of   8.1°C on Jul 25
+
+ - Average Hourly Statistics for Dry Bulb temperatures °C
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	 0:01- 1:00	 24.8	 25.4	 25.2	 23.7	 22.3	 20.1	 19.1	 18.9	 19.7	 20.7	 22.4	 23.6	
+ 	 1:01- 2:00	 24.5	 25.2	 25.0	 23.5	 22.0	 19.8	 18.8	 18.5	 19.4	 20.4	 22.1	 23.3	
+ 	 2:01- 3:00	 24.2	 24.9	 24.7	 23.2	 21.7	 19.6	 18.5	 18.2	 19.1	 20.1	 21.8	 23.0	
+ 	 3:01- 4:00	 23.8	 24.6	 24.4	 23.0	 21.4	 19.3	 18.2	 18.0	 18.8	 19.8	 21.4	 22.6	
+ 	 4:01- 5:00	 23.6	 24.4	 24.1	 22.7	 21.1	 19.0	 17.9	 17.7	 18.5	 19.5	 21.2	 22.3	
+ 	 5:01- 6:00	 23.4	 24.2	 23.9	 22.6	 20.8	 18.8	 17.6	 17.4	 18.3	 19.3	 21.0	 22.1	
+ 	 6:01- 7:00	 23.2	 24.0	 23.8	 22.4	 20.6	 18.6	 17.4	 17.2	 18.1	 19.0	 20.7	 21.9	
+ 	 7:01- 8:00	 24.7	 24.2	 23.6	 22.2	 20.4	 18.5	 17.2	 17.0	 18.3	 21.3	 23.3	 24.2	
+ 	 8:01- 9:00	 25.8	 26.4	 26.4	 24.8	 23.2	 20.6	 19.5	 19.8	 21.4	 22.5	 24.5	 25.4	
+ 	 9:01-10:00	 26.9	 27.3	 27.5	 25.8	 24.6	 22.0	 20.9	 21.2	 22.6	 23.7	 25.5	 26.5	
+ 	10:01-11:00	 27.8	 28.1	 28.4	 26.8	 25.8	 23.2	 22.2	 22.4	 23.6	 24.7	 26.5	 27.5	
+ 	11:01-12:00	 28.6	 28.8	 29.1	 27.5	 26.7	 24.1	 23.3	 23.3	 24.4	 25.4	 27.2	 28.2	
+ 	12:01-13:00	 29.2	 29.3	 29.6	 28.0	 27.5	 24.7	 24.0	 24.0	 24.9	 26.0	 27.7	 28.8	
+ 	13:01-14:00	 29.6	 29.6	 29.9	 28.3	 27.8	 25.1	 24.5	 24.4	 25.3	 26.5	 28.0	 29.2	
+ 	14:01-15:00	 29.8	 29.8	 30.0	 28.4	 27.9	 25.1	 24.6	 24.5	 25.3	 26.6	 28.1	 29.4	
+ 	15:01-16:00	 29.8	 29.7	 29.9	 28.1	 27.6	 24.8	 24.4	 24.2	 25.1	 26.4	 27.9	 29.3	
+ 	16:01-17:00	 29.5	 29.4	 29.4	 27.6	 26.9	 24.1	 23.6	 23.6	 24.5	 25.9	 27.4	 28.8	
+ 	17:01-18:00	 28.9	 28.9	 28.7	 26.8	 26.2	 23.5	 22.9	 22.7	 23.6	 25.0	 26.7	 28.1	
+ 	18:01-19:00	 28.2	 28.2	 28.2	 26.3	 25.6	 23.0	 22.3	 22.1	 23.0	 24.4	 26.0	 27.4	
+ 	19:01-20:00	 27.6	 27.7	 27.6	 25.8	 25.0	 22.4	 21.7	 21.5	 22.4	 23.7	 25.4	 26.7	
+ 	20:01-21:00	 26.9	 27.2	 27.1	 25.4	 24.4	 21.9	 21.1	 20.9	 21.8	 23.1	 24.8	 26.0	
+ 	21:01-22:00	 26.3	 26.7	 26.6	 24.9	 23.7	 21.4	 20.5	 20.3	 21.2	 22.4	 24.1	 25.3	
+ 	22:01-23:00	 25.7	 26.2	 26.0	 24.4	 23.1	 20.8	 19.9	 19.8	 20.6	 21.7	 23.5	 24.7	
+ 	23:01-24:00	 25.1	 25.7	 25.5	 23.9	 22.5	 20.3	 19.3	 19.2	 20.0	 21.1	 22.8	 24.0	
+ 	 Max Hour  	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	
+ 	 Min Hour  	   7 	   7 	   8 	   8 	   8 	   8 	   8 	   8 	   7 	   7 	   7 	   7 	
+
+ - Average Hourly Statistics for Dew Point temperatures °C
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	 0:01- 1:00	 20.9	 22.1	 21.6	 20.4	 17.7	 15.9	 14.6	 14.8	 15.0	 16.2	 18.0	 19.7	
+ 	 1:01- 2:00	 20.9	 22.1	 21.6	 20.4	 17.7	 15.9	 14.6	 14.7	 15.1	 16.2	 18.0	 19.7	
+ 	 2:01- 3:00	 20.9	 22.1	 21.6	 20.4	 17.7	 15.9	 14.6	 14.7	 15.1	 16.2	 18.1	 19.7	
+ 	 3:01- 4:00	 20.9	 22.1	 21.6	 20.4	 17.6	 16.0	 14.7	 14.7	 15.2	 16.2	 18.1	 19.7	
+ 	 4:01- 5:00	 20.8	 22.1	 21.5	 20.4	 17.6	 16.0	 14.7	 14.7	 15.2	 16.3	 18.1	 19.7	
+ 	 5:01- 6:00	 20.8	 22.1	 21.5	 20.4	 17.6	 16.0	 14.7	 14.7	 15.2	 16.3	 18.1	 19.7	
+ 	 6:01- 7:00	 20.8	 22.1	 21.5	 20.4	 17.6	 16.0	 14.7	 14.7	 15.2	 16.3	 18.1	 19.7	
+ 	 7:01- 8:00	 21.0	 22.1	 21.5	 20.4	 17.5	 16.0	 14.7	 14.7	 15.2	 16.1	 18.0	 19.7	
+ 	 8:01- 9:00	 21.1	 22.1	 21.7	 20.4	 17.8	 15.8	 14.5	 14.8	 14.8	 16.0	 17.9	 19.7	
+ 	 9:01-10:00	 21.2	 22.0	 21.7	 20.3	 18.0	 15.7	 14.4	 14.8	 14.7	 15.9	 17.9	 19.7	
+ 	10:01-11:00	 21.2	 22.0	 21.8	 20.3	 18.1	 15.6	 14.3	 14.8	 14.6	 15.8	 17.8	 19.8	
+ 	11:01-12:00	 21.3	 22.0	 21.8	 20.3	 18.2	 15.5	 14.2	 14.8	 14.4	 15.7	 17.7	 19.8	
+ 	12:01-13:00	 21.3	 22.0	 21.8	 20.3	 18.3	 15.5	 14.2	 14.8	 14.4	 15.6	 17.7	 19.8	
+ 	13:01-14:00	 21.4	 21.9	 21.8	 20.3	 18.3	 15.5	 14.1	 14.8	 14.3	 15.6	 17.6	 19.8	
+ 	14:01-15:00	 21.4	 21.9	 21.8	 20.3	 18.3	 15.4	 14.1	 14.8	 14.3	 15.6	 17.6	 19.8	
+ 	15:01-16:00	 21.4	 21.9	 21.8	 20.3	 18.3	 15.5	 14.2	 14.8	 14.3	 15.6	 17.6	 19.8	
+ 	16:01-17:00	 21.4	 22.0	 21.8	 20.3	 18.2	 15.5	 14.2	 14.8	 14.4	 15.6	 17.6	 19.8	
+ 	17:01-18:00	 21.3	 22.0	 21.8	 20.3	 18.2	 15.6	 14.3	 14.8	 14.5	 15.7	 17.7	 19.8	
+ 	18:01-19:00	 21.3	 22.0	 21.8	 20.3	 18.1	 15.7	 14.3	 14.8	 14.6	 15.8	 17.7	 19.8	
+ 	19:01-20:00	 21.2	 22.0	 21.7	 20.3	 18.0	 15.7	 14.4	 14.8	 14.7	 15.9	 17.8	 19.8	
+ 	20:01-21:00	 21.2	 22.0	 21.7	 20.3	 18.0	 15.8	 14.4	 14.8	 14.8	 15.9	 17.8	 19.8	
+ 	21:01-22:00	 21.1	 22.0	 21.7	 20.3	 17.9	 15.8	 14.4	 14.8	 14.8	 16.0	 17.9	 19.8	
+ 	22:01-23:00	 21.1	 22.1	 21.7	 20.3	 17.9	 15.9	 14.4	 14.8	 14.9	 16.1	 18.0	 19.8	
+ 	23:01-24:00	 20.9	 22.0	 21.6	 20.3	 17.7	 15.8	 14.5	 14.9	 15.0	 16.2	 18.1	 19.8	
+ 	 Max Hour  	  15 	   7 	  15 	   8 	  15 	   8 	   8 	  24 	   8 	   7 	  24 	  14 	
+ 	 Min Hour  	   7 	  15 	   8 	  24 	   8 	  15 	  15 	   8 	  15 	  15 	  15 	   7 	
+
+ - Monthly Statistics for Relative Humidity %
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	Maximum  	99   	99   	98   	98   	98   	98   	98   	98   	97   	91   	97   	99   	
+ 	 Day:Hour 	 3:07	 4:01	22:08	 3:07	17:08	 6:06	30:06	 7:08	25:04	17:06	 9:07	 1:06	
+
+ 	Minimum  	43   	50   	50   	50   	33   	39   	37   	36   	37   	38   	38   	42   	
+ 	 Day:Hour 	28:14	23:15	20:14	20:15	22:15	13:14	 4:14	20:15	19:16	21:15	 1:15	13:15	
+
+ 	Daily Avg	72   	75   	74   	75   	69   	70   	68   	69   	66   	66   	67   	70   	
+
+ - Average Hourly Relative Humidity %
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	 0:01- 1:00	   79	   82	   81	   81	   75	   77	   75	   76	   74	   75	   76	   78	
+ 	 1:01- 2:00	   81	   82	   82	   82	   76	   78	   77	   78	   76	   76	   78	   80	
+ 	 2:01- 3:00	   81	   84	   82	   83	   78	   79	   78	   79	   77	   78	   79	   81	
+ 	 3:01- 4:00	   82	   85	   83	   85	   78	   81	   79	   81	   79	   80	   81	   83	
+ 	 4:01- 5:00	   84	   86	   84	   85	   80	   82	   82	   82	   80	   81	   82	   84	
+ 	 5:01- 6:00	   84	   87	   85	   87	   81	   83	   83	   83	   82	   82	   83	   86	
+ 	 6:01- 7:00	   85	   87	   86	   88	   82	   84	   83	   84	   83	   83	   84	   87	
+ 	 7:01- 8:00	   79	   87	   87	   88	   83	   84	   84	   85	   82	   72	   72	   76	
+ 	 8:01- 9:00	   75	   76	   74	   76	   71	   73	   72	   72	   66	   66	   67	   70	
+ 	 9:01-10:00	   70	   72	   70	   71	   67	   67	   66	   66	   61	   61	   62	   66	
+ 	10:01-11:00	   67	   69	   67	   67	   63	   62	   60	   62	   57	   57	   59	   63	
+ 	11:01-12:00	   65	   67	   65	   65	   60	   58	   57	   59	   54	   55	   56	   60	
+ 	12:01-13:00	   63	   65	   63	   63	   57	   56	   54	   57	   52	   53	   55	   58	
+ 	13:01-14:00	   62	   64	   62	   62	   57	   56	   52	   55	   51	   51	   54	   57	
+ 	14:01-15:00	   61	   63	   62	   62	   57	   55	   52	   55	   51	   51	   53	   56	
+ 	15:01-16:00	   61	   63	   62	   62	   57	   56	   53	   56	   51	   51	   54	   57	
+ 	16:01-17:00	   62	   65	   64	   65	   59	   59	   55	   58	   53	   53	   55	   58	
+ 	17:01-18:00	   64	   68	   68	   68	   61	   61	   58	   61	   57	   56	   58	   61	
+ 	18:01-19:00	   67	   70	   70	   70	   63	   64	   61	   64	   59	   58	   60	   64	
+ 	19:01-20:00	   68	   72	   72	   73	   66	   66	   63	   66	   62	   61	   63	   67	
+ 	20:01-21:00	   71	   74	   73	   75	   68	   68	   66	   68	   64	   64	   65	   69	
+ 	21:01-22:00	   73	   76	   75	   77	   70	   71	   68	   70	   67	   67	   68	   72	
+ 	22:01-23:00	   76	   78	   77	   78	   72	   74	   70	   73	   70	   70	   71	   74	
+ 	23:01-24:00	   78	   80	   79	   79	   74	   75	   73	   76	   72	   73	   75	   77	
+ 	 Max Hour  	   7 	   7 	   8 	   8 	   8 	   8 	   8 	   8 	   7 	   7 	   7 	   7 	
+ 	 Min Hour  	  15 	  16 	  14 	  15 	  14 	  15 	  15 	  14 	  14 	  14 	  15 	  15 	
+
+ - Monthly Indicators for Precipitation/Moisture (kPa)
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	         	  2.6	  2.6	  2.6	  2.4	  2.1	  1.8	  1.6	  1.7	  1.6	  1.8	  2.0	  2.3	
+
+ - Monthly Statistics for Wind Chill/Heat Index temperatures °C **
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	Minimum WC	     	     	     	     	     	     	     	     	     	     	     	     	
+ 	 Day:Hour	     	     	     	     	     	     	     	     	     	     	     	     	
+
+ 	Average WC	     	     	     	     	     	     	     	     	     	     	     	     	
+ 	Avg Del WC	     	     	     	     	     	     	     	     	     	     	     	     	
+ 	 # Hours WC	     	     	     	     	     	     	     	     	     	     	     	     	
+
+ 	Maximum HI	   34	   36	   38	   32	   33	   29	     	     	   28	   29	   30	   34	
+ 	 Day:Hour	 3:15	 6:18	14:19	 3:15	 3:15	 5:15	     	     	26:15	17:15	16:15	30:15	
+
+ 	Average HI	   31	   32	   32	   30	   29	   28	     	     	   28	   28	   29	   30	
+ 	Avg Del HI	    2	    3	    3	    2	    2	    1	     	     	    1	    0	    1	    2	
+ 	 # Hours HI	  329	  324	  358	  187	  142	   16	     	     	    3	   28	  160	  265	
+
+   - **WindChill/HeatIndex Temps -- statistics...only those different from Air Temps
+
+ - Monthly Wind Direction % {N=0 or 360,E=90,S=180,W=270}
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	North    	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	NorthEast	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	East     	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	SouthEast	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	South    	  100	  100	  100	  100	  100	  100	  100	  100	  100	  100	  100	  100	
+ 	SouthWest	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	West     	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	NorthWest	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+
+ - Monthly Statistics for Wind Speed m/s
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	Maximum 	6.9  	13.4 	8.7  	8.8  	9.1  	7.8  	7.8  	12.6 	12.5 	9.2  	7.9  	7.1  	
+ 	 Day:Hour 	18:16	13:15	12:14	11:15	12:15	30:14	 2:16	 4:15	 2:15	21:15	28:14	25:16	
+
+ 	Minimum 	1.4  	1.6  	1.4  	1.7  	1.6  	1.8  	1.8  	1.7  	2.3  	2.0  	1.4  	1.6  	
+ 	 Day:Hour 	16:02	 5:24	28:24	16:24	10:24	18:24	14:24	 1:06	 5:24	 1:24	29:24	 2:24	
+
+ 	Daily Avg	3.0  	4.3  	3.4  	3.6  	3.6  	3.5  	3.7  	4.4  	5.2  	3.8  	3.3  	3.2  	
+
+   - Maximum Wind Speed of  13.4 m/s on Feb 13
+   - Minimum Wind Speed of   1.4 m/s on Nov 29
+
+ - Average Hourly Statistics for Wind Speed m/s
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	 0:01- 1:00	  2.2	  2.7	  2.4	  2.4	  2.4	  2.5	  2.5	  3.3	  3.8	  3.0	  2.2	  2.2	
+ 	 1:01- 2:00	  2.2	  2.6	  2.4	  2.3	  2.4	  2.5	  2.5	  3.3	  3.7	  2.9	  2.2	  2.2	
+ 	 2:01- 3:00	  2.2	  2.6	  2.3	  2.3	  2.4	  2.5	  2.5	  3.2	  3.7	  3.0	  2.2	  2.2	
+ 	 3:01- 4:00	  2.2	  2.5	  2.3	  2.3	  2.4	  2.5	  2.5	  3.2	  3.7	  2.9	  2.2	  2.2	
+ 	 4:01- 5:00	  2.2	  2.5	  2.3	  2.3	  2.3	  2.5	  2.5	  3.2	  3.7	  2.9	  2.2	  2.2	
+ 	 5:01- 6:00	  2.2	  2.5	  2.3	  2.3	  2.3	  2.5	  2.5	  3.2	  3.7	  2.9	  2.2	  2.2	
+ 	 6:01- 7:00	  2.2	  2.5	  2.3	  2.3	  2.4	  2.5	  2.5	  3.3	  3.7	  2.9	  2.2	  2.2	
+ 	 7:01- 8:00	  2.2	  2.8	  2.4	  2.3	  2.4	  2.5	  2.6	  3.4	  3.9	  3.0	  2.2	  2.2	
+ 	 8:01- 9:00	  2.3	  3.3	  2.7	  2.5	  2.5	  2.6	  2.7	  3.6	  4.3	  3.2	  2.5	  2.2	
+ 	 9:01-10:00	  2.5	  4.2	  3.2	  3.2	  3.2	  3.2	  3.3	  4.1	  5.1	  3.6	  3.1	  2.7	
+ 	10:01-11:00	  3.2	  5.2	  3.8	  4.2	  4.1	  4.0	  4.2	  4.9	  5.9	  4.2	  3.8	  3.4	
+ 	11:01-12:00	  3.9	  6.2	  4.7	  5.1	  5.1	  4.8	  4.9	  5.7	  6.8	  4.8	  4.5	  4.2	
+ 	12:01-13:00	  4.6	  6.9	  5.4	  5.8	  5.8	  5.5	  5.6	  6.4	  7.6	  5.5	  5.3	  5.0	
+ 	13:01-14:00	  5.2	  7.4	  6.0	  6.3	  6.4	  6.1	  6.2	  6.9	  8.2	  6.0	  5.8	  5.8	
+ 	14:01-15:00	  5.5	  7.5	  6.0	  6.5	  6.5	  6.2	  6.5	  7.1	  8.4	  6.3	  6.0	  5.9	
+ 	15:01-16:00	  5.4	  7.4	  5.8	  6.4	  6.4	  5.9	  6.4	  6.9	  8.2	  5.9	  5.7	  5.7	
+ 	16:01-17:00	  4.7	  6.9	  5.3	  5.9	  5.8	  5.4	  5.7	  6.3	  7.5	  5.3	  5.1	  5.2	
+ 	17:01-18:00	  3.7	  6.0	  4.5	  5.0	  4.8	  4.5	  4.8	  5.5	  6.6	  4.5	  4.3	  4.3	
+ 	18:01-19:00	  2.9	  5.1	  3.6	  4.1	  3.7	  3.6	  3.9	  4.5	  5.6	  3.9	  3.4	  3.4	
+ 	19:01-20:00	  2.5	  4.2	  3.1	  3.4	  3.1	  3.1	  3.3	  3.9	  4.9	  3.5	  2.8	  2.7	
+ 	20:01-21:00	  2.3	  3.4	  2.5	  2.6	  2.7	  2.6	  2.8	  3.5	  4.2	  3.1	  2.4	  2.3	
+ 	21:01-22:00	  2.3	  3.0	  2.4	  2.4	  2.5	  2.5	  2.6	  3.4	  3.9	  3.0	  2.2	  2.2	
+ 	22:01-23:00	  2.2	  2.8	  2.4	  2.3	  2.4	  2.5	  2.5	  3.3	  3.7	  3.0	  2.2	  2.2	
+ 	23:01-24:00	  2.2	  2.8	  2.4	  2.4	  2.4	  2.5	  2.5	  3.4	  3.8	  3.0	  2.2	  2.2	
+ 	 Max Hour  	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	
+ 	 Min Hour  	  24 	   6 	   6 	   5 	   5 	   3 	   2 	   5 	   7 	   6 	   5 	   3 	
+
+ - Average Hourly Statistics for Wind Direction ° {N=0 or 360,E=90,S=180,W=270}
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	 0:01- 1:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	 1:01- 2:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	 2:01- 3:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	 3:01- 4:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	 4:01- 5:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	 5:01- 6:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	 6:01- 7:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	 7:01- 8:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	 8:01- 9:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	 9:01-10:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	10:01-11:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	11:01-12:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	12:01-13:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	13:01-14:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	14:01-15:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	15:01-16:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	16:01-17:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	17:01-18:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	18:01-19:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	19:01-20:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	20:01-21:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	21:01-22:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	22:01-23:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	23:01-24:00	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	  180	
+ 	 Max Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
+ 	 Min Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
+
+ - Monthly Statistics for Liquid Precipitation mm
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	  Total   	105  	308  	445  	134  	47   	128  	62   	120  	31   	8    	30   	45   	
+ 	Max Hourly	26   	59   	99   	27   	12   	40   	13   	33   	18   	3    	17   	9    	
+
+ - Monthly Statistics for Albedo
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	Average 	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	
+
+ - Monthly Statistics for Solar Radiation  (Direct Normal, Diffuse, Global Horizontal) Wh/m²
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	Direct Avg 	4936 	4209 	4156 	4618 	4436 	3152 	2652 	2592 	3253 	3403 	5125 	4712 	
+
+ 	Direct Max 	8169 	6958 	7290 	6672 	6548 	5122 	4714 	4318 	4562 	5573 	9086 	8858 	
+ 	    Day    	  30 	  11 	  15 	   5 	  10 	   3 	   4 	  31 	   8 	  23 	  29 	   9 	
+
+ 	Diffuse Avg	3143 	3040 	2701 	2204 	1951 	1807 	2023 	2400 	2860 	3285 	3152 	3282 	
+
+ 	Global Avg 	6827 	6051 	5571 	5240 	4524 	3498 	3452 	3943 	5028 	5559 	6869 	6709 	
+   - Maximum Direct Normal Solar of  9085 Wh/m² on Nov 29
+
+ - Average Hourly Statistics for Direct Normal Solar Radiation Wh/m²
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	 0:01- 1:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 1:01- 2:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 2:01- 3:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 3:01- 4:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 4:01- 5:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 5:01- 6:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 6:01- 7:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    5	   29	   10	
+ 	 7:01- 8:00	  107	   53	   41	   40	   18	    3	    0	    2	   44	   78	  177	  131	
+ 	 8:01- 9:00	  220	  166	  165	  216	  199	  110	   64	   88	  146	  148	  291	  242	
+ 	 9:01-10:00	  350	  261	  299	  370	  343	  234	  140	  151	  205	  230	  394	  328	
+ 	10:01-11:00	  410	  328	  351	  477	  468	  306	  224	  209	  271	  259	  463	  375	
+ 	11:01-12:00	  476	  344	  426	  535	  521	  364	  265	  263	  315	  267	  499	  425	
+ 	12:01-13:00	  520	  402	  462	  578	  584	  394	  314	  273	  341	  319	  534	  477	
+ 	13:01-14:00	  586	  504	  509	  606	  626	  461	  376	  334	  437	  425	  557	  533	
+ 	14:01-15:00	  608	  565	  543	  644	  641	  487	  430	  393	  498	  477	  640	  580	
+ 	15:01-16:00	  621	  571	  572	  647	  645	  471	  420	  427	  524	  481	  641	  594	
+ 	16:01-17:00	  602	  570	  511	  489	  391	  322	  419	  452	  474	  486	  571	  593	
+ 	17:01-18:00	  438	  444	  277	   15	    0	    0	    0	    0	    0	  228	  330	  425	
+ 	18:01-19:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	19:01-20:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	20:01-21:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	21:01-22:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	22:01-23:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	23:01-24:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 Max Hour*	  16*	  16*	  16*	  16*	  16*	  15 	  15 	  17*	  16*	  17*	  16*	  16*	
+ ** Possible error in Solar Radiation values (warning for <12pm or >3pm)
+ 	 Min Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
+
+ - Average Hourly Statistics for Diffuse Horizontal Solar Radiation Wh/m²
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	 0:01- 1:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 1:01- 2:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 2:01- 3:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 3:01- 4:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 4:01- 5:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 5:01- 6:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 6:01- 7:00	   45	   12	    3	    0	    0	    0	    0	    0	   11	   66	  106	   91	
+ 	 7:01- 8:00	  190	  156	  133	  113	   86	   47	   40	   77	  151	  208	  235	  221	
+ 	 8:01- 9:00	  299	  267	  246	  220	  189	  158	  162	  193	  270	  314	  317	  316	
+ 	 9:01-10:00	  350	  332	  312	  267	  239	  230	  247	  287	  343	  369	  362	  379	
+ 	10:01-11:00	  390	  392	  365	  283	  256	  269	  298	  334	  391	  436	  376	  413	
+ 	11:01-12:00	  391	  439	  362	  285	  267	  274	  320	  348	  413	  458	  388	  419	
+ 	12:01-13:00	  370	  417	  325	  274	  253	  259	  301	  347	  387	  432	  362	  397	
+ 	13:01-14:00	  319	  320	  297	  240	  213	  208	  254	  296	  310	  351	  311	  336	
+ 	14:01-15:00	  272	  250	  241	  198	  182	  163	  187	  219	  232	  242	  239	  267	
+ 	15:01-16:00	  213	  204	  188	  154	  136	  120	  139	  159	  170	  201	  202	  206	
+ 	16:01-17:00	  159	  144	  137	  132	  131	   80	   76	  106	  116	  134	  151	  138	
+ 	17:01-18:00	  122	  106	   91	   38	    0	    0	    0	   34	   67	   73	  101	   98	
+ 	18:01-19:00	   22	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	19:01-20:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	20:01-21:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	21:01-22:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	22:01-23:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	23:01-24:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 Max Hour*	  12 	  12 	  11*	  12 	  12 	  12 	  12 	  12 	  12 	  12 	  12 	  12 	
+ ** Possible error in Solar Radiation values (warning for <12pm or >3pm)
+ 	 Min Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
+
+ - Average Hourly Statistics for Global Horizontal Solar Radiation Wh/m²
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	 0:01- 1:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 1:01- 2:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 2:01- 3:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 3:01- 4:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 4:01- 5:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    1	    0	
+ 	 5:01- 6:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 6:01- 7:00	   45	   12	    3	    0	    0	    0	    0	    0	   11	   67	  116	   94	
+ 	 7:01- 8:00	  240	  178	  149	  126	   91	   47	   40	   78	  169	  247	  331	  289	
+ 	 8:01- 9:00	  445	  371	  343	  336	  282	  204	  189	  237	  358	  417	  529	  488	
+ 	 9:01-10:00	  638	  539	  540	  525	  451	  363	  328	  386	  498	  562	  707	  660	
+ 	10:01-11:00	  774	  693	  673	  668	  592	  474	  451	  494	  625	  679	  823	  771	
+ 	11:01-12:00	  863	  776	  762	  744	  664	  535	  515	  564	  699	  718	  886	  843	
+ 	12:01-13:00	  885	  811	  756	  762	  689	  537	  530	  570	  691	  734	  881	  865	
+ 	13:01-14:00	  864	  785	  738	  707	  634	  501	  503	  545	  665	  717	  805	  820	
+ 	14:01-15:00	  767	  703	  645	  610	  532	  414	  422	  462	  569	  585	  719	  722	
+ 	15:01-16:00	  617	  568	  512	  451	  376	  284	  300	  348	  428	  455	  566	  571	
+ 	16:01-17:00	  431	  390	  320	  253	  196	  128	  153	  212	  246	  284	  356	  383	
+ 	17:01-18:00	  223	  197	  125	   57	   16	    8	   19	   45	   67	   89	  143	  180	
+ 	18:01-19:00	   35	   25	    4	    1	    1	    1	    1	    2	    2	    3	    6	   19	
+ 	19:01-20:00	    2	    1	    1	    0	    0	    0	    0	    0	    0	    1	    1	    2	
+ 	20:01-21:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	21:01-22:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	22:01-23:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	23:01-24:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 Max Hour  	  13 	  13 	  12 	  13 	  13 	  13 	  13 	  13 	  12 	  13 	  12 	  13 	
+ 	 Min Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
+
+ - Average Hourly Statistics for Total Sky Cover %
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	 0:01- 1:00	   80	   69	   70	   71	   58	   75	   76	   78	   75	   75	   66	   73	
+ 	 1:01- 2:00	   80	   69	   68	   69	   59	   75	   76	   77	   72	   76	   66	   73	
+ 	 2:01- 3:00	   80	   69	   68	   69	   60	   75	   76	   77	   72	   76	   66	   73	
+ 	 3:01- 4:00	   80	   69	   68	   70	   62	   75	   77	   77	   72	   76	   67	   74	
+ 	 4:01- 5:00	   80	   69	   69	   68	   64	   76	   78	   77	   72	   76	   68	   74	
+ 	 5:01- 6:00	   80	   68	   68	   66	   66	   77	   78	   77	   71	   76	   69	   75	
+ 	 6:01- 7:00	   80	   68	   67	   66	   68	   76	   78	   77	   71	   76	   69	   75	
+ 	 7:01- 8:00	   55	   66	   67	   67	   69	   76	   78	   77	   68	   63	   41	   51	
+ 	 8:01- 9:00	   38	   46	   46	   36	   40	   58	   68	   65	   55	   54	   33	   42	
+ 	 9:01-10:00	   32	   38	   36	   26	   33	   42	   60	   58	   52	   49	   28	   35	
+ 	10:01-11:00	   30	   34	   35	   22	   26	   41	   53	   55	   47	   46	   29	   36	
+ 	11:01-12:00	   28	   35	   32	   23	   24	   39	   52	   55	   45	   49	   28	   35	
+ 	12:01-13:00	   31	   34	   35	   23	   25	   43	   52	   56	   49	   45	   28	   34	
+ 	13:01-14:00	   28	   33	   35	   27	   25	   44	   54	   56	   45	   43	   30	   34	
+ 	14:01-15:00	   30	   34	   36	   27	   26	   49	   57	   56	   46	   46	   27	   34	
+ 	15:01-16:00	   32	   35	   37	   31	   32	   58	   62	   59	   50	   50	   26	   36	
+ 	16:01-17:00	   37	   42	   49	   44	   45	   72	   72	   61	   61	   57	   35	   45	
+ 	17:01-18:00	   55	   61	   72	   75	   46	   72	   73	   76	   77	   74	   62	   63	
+ 	18:01-19:00	   80	   69	   72	   76	   48	   72	   73	   76	   77	   75	   62	   70	
+ 	19:01-20:00	   80	   70	   72	   76	   50	   72	   73	   77	   77	   75	   63	   71	
+ 	20:01-21:00	   80	   69	   71	   74	   52	   74	   74	   77	   76	   75	   64	   71	
+ 	21:01-22:00	   80	   70	   72	   72	   54	   74	   74	   77	   76	   75	   65	   73	
+ 	22:01-23:00	   80	   69	   71	   72	   55	   74	   74	   77	   75	   75	   66	   73	
+ 	23:01-24:00	   80	   69	   71	   72	   56	   74	   74	   77	   75	   75	   66	   73	
+ 	 Max Hour  	   1 	  20 	  19 	  19 	   8 	   6 	   8 	   1 	  18 	   4 	   6 	   6 	
+ 	 Min Hour  	  14 	  14 	  12 	  11 	  12 	  12 	  13 	  11 	  14 	  14 	  16 	  13 	
+
+ - Average Hourly Statistics for Opaque Sky Cover %
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	 0:01- 1:00	   80	   69	   70	   71	   58	   75	   76	   78	   75	   75	   66	   73	
+ 	 1:01- 2:00	   80	   69	   68	   69	   59	   75	   76	   77	   72	   76	   66	   73	
+ 	 2:01- 3:00	   80	   69	   68	   69	   60	   75	   76	   77	   72	   76	   66	   73	
+ 	 3:01- 4:00	   80	   69	   68	   70	   62	   75	   77	   77	   72	   76	   67	   74	
+ 	 4:01- 5:00	   80	   69	   69	   68	   64	   76	   78	   77	   72	   76	   68	   74	
+ 	 5:01- 6:00	   80	   68	   68	   66	   66	   77	   78	   77	   71	   76	   69	   75	
+ 	 6:01- 7:00	   80	   68	   67	   66	   68	   76	   78	   77	   71	   76	   69	   75	
+ 	 7:01- 8:00	   55	   66	   67	   67	   69	   76	   78	   77	   68	   63	   41	   51	
+ 	 8:01- 9:00	   38	   46	   46	   36	   40	   58	   68	   65	   55	   54	   33	   42	
+ 	 9:01-10:00	   32	   38	   36	   26	   33	   42	   60	   58	   52	   49	   28	   35	
+ 	10:01-11:00	   30	   34	   35	   22	   26	   41	   53	   55	   47	   46	   29	   36	
+ 	11:01-12:00	   28	   35	   32	   23	   24	   39	   52	   55	   45	   49	   28	   35	
+ 	12:01-13:00	   31	   34	   35	   23	   25	   43	   52	   56	   49	   45	   28	   34	
+ 	13:01-14:00	   28	   33	   35	   27	   25	   44	   54	   56	   45	   43	   30	   34	
+ 	14:01-15:00	   30	   34	   36	   27	   26	   49	   57	   56	   46	   46	   27	   34	
+ 	15:01-16:00	   32	   35	   37	   31	   32	   58	   62	   59	   50	   50	   26	   36	
+ 	16:01-17:00	   37	   42	   49	   44	   45	   72	   72	   61	   61	   57	   35	   45	
+ 	17:01-18:00	   55	   61	   72	   75	   46	   72	   73	   76	   77	   74	   62	   63	
+ 	18:01-19:00	   80	   69	   72	   76	   48	   72	   73	   76	   77	   75	   62	   70	
+ 	19:01-20:00	   80	   70	   72	   76	   50	   72	   73	   77	   77	   75	   63	   71	
+ 	20:01-21:00	   80	   69	   71	   74	   52	   74	   74	   77	   76	   75	   64	   71	
+ 	21:01-22:00	   80	   70	   72	   72	   54	   74	   74	   77	   76	   75	   65	   73	
+ 	22:01-23:00	   80	   69	   71	   72	   55	   74	   74	   77	   75	   75	   66	   73	
+ 	23:01-24:00	   80	   69	   71	   72	   56	   74	   74	   77	   75	   75	   66	   73	
+ 	 Max Hour  	   1 	  20 	  19 	  19 	   8 	   6 	   8 	   1 	  18 	   4 	   6 	   6 	
+ 	 Min Hour  	  14 	  14 	  12 	  11 	  12 	  12 	  13 	  11 	  14 	  14 	  16 	  13 	
+
+ - Monthly Calculated "undisturbed" Ground Temperatures** °C
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	   0.5 m  	 26.6	 26.8	 26.3	 25.6	 23.7	 22.4	 21.4	 21.2	 21.7	 22.8	 24.3	 25.6	
+ 	   2.0 m  	 25.6	 26.1	 26.0	 25.6	 24.3	 23.2	 22.4	 21.9	 22.0	 22.7	 23.7	 24.8	
+ 	   4.0 m  	 24.9	 25.3	 25.4	 25.3	 24.5	 23.8	 23.1	 22.7	 22.6	 22.9	 23.5	 24.2	
+
+   - **These ground temperatures should NOT BE USED in the GroundTemperatures object to compute building floor losses.
+   -   The temperatures for 0.5 m depth can be used for GroundTemperatures:Surface.
+   -   The temperatures for 4.0 m depth can be used for GroundTemperatures:Deep.
+   -   Calculations use a standard soil diffusivity of 2.3225760E-03 {m**2/day}
+
+ - Heating/Cooling Degree Days/Hours calculated from this weather file.
+ - Heating/Cooling Degree Days/Hours from design conditions shown earlier in this report.
+ - Monthly Weather File Heating/Cooling Degree Days/Hours
+ 	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
+ 	HDD base 10C	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	HDD base 18C	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+
+ 	CDD base 10C	  514	  474	  522	  458	  438	  351	  335	  332	  350	  399	  437	  489	
+ 	CDD base 18C	  266	  250	  274	  218	  190	  111	   87	   84	  110	  151	  197	  241	
+
+ 	CDH base 20C	 4893	 4648	 5099	 3782	 3105	 1500	 1185	 1139	 1513	 2248	 3313	 4294	
+ 	CDH base 23C	 2673	 2634	 2877	 1714	 1345	  398	  242	  225	  405	  803	 1481	 2182	
+ 	CDH base 27C	  605	  581	  683	  209	  134	    8	    0	    0	    1	   11	  165	  467	
+
+    - 5098 annual (wthr file) cooling degree-days (10°C baseline)
+    -    0 annual (wthr file) heating degree-days (10°C baseline)
+
+    - 2179 annual (wthr file) cooling degree-days (18°C baseline)
+    -    0 annual (wthr file) heating degree-days (18°C baseline)
+
+ - Climate type "Aw" (Köppen classification)**
+ - Tropical savanna (pronounced wet & dry seasons, lat. 15-20°)
+ - **Note that the Köppen classification shown here is derived algorithmically from the source weather data.
+ -   It may not be indicative of the long term climate for this location.
+
+ - Climate type "1A" (ASHRAE Standard 196-2006 Climate Zone)**
+ - Very Hot - Humid, Probable Köppen classification=Aw, Tropical Wet-and-Dry
+ - **Note that the ASHRAE classification shown here is derived algorithmically from the source weather data.
+ -   It may not be indicative of the long term climate for this location.
+
+ - Typical/Extreme Period Determination
+ - Wet Period=Nov:May
+     Week closest to this period average temperature selected for Typical Period
+     Typical Week Period selected: Apr  5:Apr 11, Average Temp=  25.71°C, Deviation=| 0.070|°C
+ - Dry Period=Jun:Oct
+     Week closest to this period average temperature selected for Typical Period
+     Typical Week Period selected: Jun  8:Jun 14, Average Temp=  21.55°C, Deviation=| 0.046|°C
+ - Extremes Selected from annual Min/Max
+     Week closest to maximum annual temperature selected for Typical Period
+     Extreme Hot Week Period selected: Mar 12:Mar 18, Maximum Temp=  32.20°C, Deviation=| 4.928|°C
+     Week closest to minimum annual temperature selected for Typical Period
+     Extreme Cold Week Period selected: Jul 23:Jul 29, Minimum Temp=  13.22°C, Deviation=| 6.404|°C
