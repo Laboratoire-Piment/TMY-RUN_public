@@ -129,7 +129,6 @@ TMY-RUN/
 └── TMY_Stations/
     ├── AUDIT-DDY-STAT/
     ├── CSV_EPW/
-    ├── DEF/
     ├── EPW/
     └── TMY3/
 ```
