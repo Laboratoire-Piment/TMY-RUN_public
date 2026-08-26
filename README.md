@@ -1,6 +1,6 @@
 # TMY-RUN — Années Météorologiques Types pour le territoire de La Réunion
 
-**Dernière mise à jour : 18 août 2026**
+**Dernière mise à jour : 26 août 2026**
 
 ## Contexte
 
@@ -55,13 +55,29 @@ Cette source permet d’obtenir une couverture spatiale continue sur l’ensembl
 
 Les données BRIO étant disponibles à une résolution temporelle quotidienne, une **descente d’échelle temporelle du quotidien vers l’horaire** est appliquée afin de produire des séries météorologiques horaires adaptées à la génération de TMY.
 
+Les TMYs BRIO sont désormais répartis selon les jeux de données et scénarios climatiques suivants :
+
+* `TMY_BRIO_krigged` — TMYs BRIO spatialisés/krigés ;
+* `TMY_BRIO_ssp126` — TMYs BRIO pour le scénario `ssp126` ;
+* `TMY_BRIO_ssp245` — TMYs BRIO pour le scénario `ssp245` ;
+* `TMY_BRIO_ssp370` — TMYs BRIO pour le scénario `ssp370` ;
+* `TMY_BRIO_ssp585` — TMYs BRIO pour le scénario `ssp585`.
+
 La chaîne de traitement peut être résumée ainsi :
 
 **BRIO quotidien → grille 3 km → descente d’échelle temporelle → données horaires → TMY**
 
-Les fichiers sont identifiés par leur position sur la grille et leurs coordonnées géographiques. Par exemple :
+Les fichiers sont identifiés par leur position sur la grille, le jeu de données ou scénario climatique, et leurs coordonnées géographiques. Par exemple :
 
-`TMY_REU_i03_j18_lat-21.380_lon55.570.csv`
+`TMY_REU_i03_j18_ssp126_lat-21.380_lon55.570.csv`
+
+Pour les fichiers krigés :
+
+`TMY_REU_i03_j18_krigged_lat-21.380_lon55.570.csv`
+
+ou, au format TMY3 :
+
+`TMY_REU_i03_j18_krigged_lat-21.380_lon55.570_TMY3.csv`
 
 <p align="center">
   <img src="images/carte.png" width="600">
@@ -76,28 +92,64 @@ Le dépôt contient également des **TMYs provenant de Meteonorm**, utilisés no
 ```text
 TMY-RUN/
 │
-├── TMY_BRIO/
+├── TMY_BRIO_krigged/
 │   ├── CSV_EPW/
-│   ├── DEF/
-│   └── EPW/
+│   ├── EPW/
+│   └── TMY3/
+│
+├── TMY_BRIO_ssp126/
+│   ├── CSV_EPW/
+│   ├── EPW/
+│   └── TMY3/
+│
+├── TMY_BRIO_ssp245/
+│   ├── CSV_EPW/
+│   ├── EPW/
+│   └── TMY3/
+│
+├── TMY_BRIO_ssp370/
+│   ├── CSV_EPW/
+│   ├── EPW/
+│   └── TMY3/
+│
+├── TMY_BRIO_ssp585/
+│   ├── CSV_EPW/
+│   ├── EPW/
+│   └── TMY3/
 │
 ├── TMY_Meteonorm/
 │
+├── images/
+│
 └── TMY_Stations/
     ├── AUDIT-DDY-STAT/
+    ├── CSV_EPW/
     ├── DEF/
     ├── EPW/
-    ├── EPW_CSV/
     └── TMY3/
 ```
 
-### TMY_BRIO
+### TMY_BRIO_krigged
 
-Contient les TMYs spatialisés issus des données BRIO à une résolution de **3 km**, après descente d’échelle temporelle vers une résolution horaire.
+Contient les TMYs spatialisés/krigés issus des données BRIO à une résolution de **3 km**, après descente d’échelle temporelle vers une résolution horaire.
+
+### TMY_BRIO_ssp126, TMY_BRIO_ssp245, TMY_BRIO_ssp370 et TMY_BRIO_ssp585
+
+Contiennent les TMYs BRIO organisés par scénario climatique. Chaque répertoire suit la même structure :
+
+* `CSV_EPW/` — fichiers CSV structurés pour la conversion ou l’usage proche du format EPW ;
+* `EPW/` — fichiers au format EPW lorsque disponibles ;
+* `TMY3/` — fichiers au format TMY3.
 
 ### TMY_Stations
 
-Contient les TMYs générés à partir des observations des stations météorologiques de Météo-France, ainsi que les différents formats et fichiers associés à leur production.
+Contient les TMYs générés à partir des observations des stations météorologiques de Météo-France, ainsi que les différents formats et fichiers associés à leur production :
+
+* `AUDIT-DDY-STAT/` — fichiers d’audit et de statistiques ;
+* `CSV_EPW/` — fichiers CSV associés aux EPW ;
+* `DEF/` — fichiers de définition ;
+* `EPW/` — fichiers au format EPW ;
+* `TMY3/` — fichiers au format TMY3.
 
 ### TMY_Meteonorm
 
