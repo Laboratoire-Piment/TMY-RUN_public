@@ -94,16 +94,19 @@ TMY-RUN/
 │
 ├── TMY_BRIO_krigged/
 │   ├── CSV_EPW/
+│   ├── AUDIT-DDY-STAT/
 │   ├── EPW/
 │   └── TMY3/
 │
 ├── TMY_BRIO_ssp126/
 │   ├── CSV_EPW/
+│   ├── AUDIT-DDY-STAT/
 │   ├── EPW/
 │   └── TMY3/
 │
 ├── TMY_BRIO_ssp245/
 │   ├── CSV_EPW/
+│   ├── AUDIT-DDY-STAT/
 │   ├── EPW/
 │   └── TMY3/
 │
@@ -117,7 +120,7 @@ TMY-RUN/
 │   ├── EPW/
 │   └── TMY3/
 │
-├── TMY_Meteonorm/
+├── tmy_meteonorm/
 │
 ├── images/
 │
@@ -138,8 +141,11 @@ Contient les TMYs spatialisés/krigés issus des données BRIO à une résolutio
 Contiennent les TMYs BRIO organisés par scénario climatique. Chaque répertoire suit la même structure :
 
 * `CSV_EPW/` — fichiers CSV structurés pour la conversion ou l’usage proche du format EPW ;
+* `AUDIT-DDY-STAT/` — fichiers `.audit`, `.ddy` et `.stat` associés, lorsqu’ils sont disponibles ;
 * `EPW/` — fichiers au format EPW lorsque disponibles ;
 * `TMY3/` — fichiers au format TMY3.
+
+Les répertoires `TMY_BRIO_krigged`, `TMY_BRIO_ssp126` et `TMY_BRIO_ssp245` contiennent les fichiers `.audit`, `.ddy` et `.stat` dans `AUDIT-DDY-STAT/`, au même niveau que `EPW/`.
 
 ### TMY_Stations
 
@@ -151,7 +157,7 @@ Contient les TMYs générés à partir des observations des stations météorolo
 * `EPW/` — fichiers au format EPW ;
 * `TMY3/` — fichiers au format TMY3.
 
-### TMY_Meteonorm
+### tmy_meteonorm
 
 Contient les fichiers TMY issus de **Meteonorm**.
 
