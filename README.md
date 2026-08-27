@@ -58,10 +58,10 @@ Les données BRIO étant disponibles à une résolution temporelle quotidienne, 
 Les TMYs BRIO sont désormais répartis selon les jeux de données et scénarios climatiques suivants :
 
 * `TMY_BRIO_krigged` — TMYs BRIO spatialisés/krigés ;
-* `TMY_BRIO_ssp126` — TMYs BRIO pour le scénario `ssp126` ;
-* `TMY_BRIO_ssp245` — TMYs BRIO pour le scénario `ssp245` ;
-* `TMY_BRIO_ssp370` — TMYs BRIO pour le scénario `ssp370` ;
-* `TMY_BRIO_ssp585` — TMYs BRIO pour le scénario `ssp585`.
+* `TMY_BRIO_ssp126` — TMYs BRIO pour le scénario `ssp126` GES (Gaz à Effet de Serre) faibles (SSP1-2.6) ;
+* `TMY_BRIO_ssp245` — TMYs BRIO pour le scénario `ssp245` GES intermédiaires (SSP2-4.5) ;
+* `TMY_BRIO_ssp370` — TMYs BRIO pour le scénario `ssp370` GES élevées (SSP3-7.0) ;
+* `TMY_BRIO_ssp585` — TMYs BRIO pour le scénario `ssp585` GES très élevées (SSP5-8.5).
 
 La chaîne de traitement peut être résumée ainsi :
 
