@@ -156,9 +156,6 @@ Contient les TMYs générés à partir des observations des stations météorolo
 * `EPW/` — fichiers au format EPW ;
 * `TMY3/` — fichiers au format TMY3.
 
-### tmy_meteonorm
-
-Contient les fichiers TMY issus de **Meteonorm**.
 
 ## Formats
 
