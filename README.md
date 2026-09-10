@@ -1,6 +1,6 @@
 # TMY-RUN — Années Météorologiques Types pour le territoire de La Réunion
 
-**Dernière mise à jour : 04 septembre 2026**
+**Dernière mise à jour : 10 septembre 2026**
 
 ## Contexte
 
@@ -87,6 +87,20 @@ ou, au format TMY3 :
 
 Le dépôt contient également des **TMYs provenant de Meteonorm**, utilisés notamment comme source de comparaison et de référence dans l’évaluation des différents jeux de données météorologiques.
 
+## 4. TMYs pour les centrales photovoltaïques
+
+Le dossier [`TMY_Centrales_PV/`](TMY_Centrales_PV/) rassemble des TMYs provenant de **Meteonorm** et de **PVGIS** pour sept sites de centrales photovoltaïques :
+
+* `ATEXIA` ;
+* `CLERMONT-II` ;
+* `CLERMONT-III` ;
+* `GARAGE-SCF` ;
+* `GRANACE` ;
+* `OCEAN-II` ;
+* `SETB`.
+
+Chaque site dispose de fichiers **EPW** et **TMY3 (CSV)** pour Meteonorm, ainsi que de fichiers **EPW** et **CSV** pour PVGIS.
+
 ## Organisation du dépôt
 
 ```text
@@ -122,6 +136,15 @@ TMY-RUN/
 │   ├── EPW/
 │   └── TMY3/
 │
+├── TMY_Centrales_PV/
+│   ├── TMY_Meteonorm/
+│   │   ├── AUDIT-DDY-STAT/
+│   │   ├── EPW/
+│   │   └── TMY3/
+│   └── TMY_PVGIS/
+│       ├── CSV/
+│       └── EPW/
+│
 ├── tmy_meteonorm/
 │
 ├── images/
@@ -155,6 +178,15 @@ Contient les TMYs générés à partir des observations des stations météorolo
 * `DEF/` — fichiers de définition ;
 * `EPW/` — fichiers au format EPW ;
 * `TMY3/` — fichiers au format TMY3.
+
+### TMY_Centrales_PV
+
+Contient les TMYs des centrales photovoltaïques, organisés par source :
+
+* `TMY_Meteonorm/` — fichiers EPW dans `EPW/`, fichiers TMY3 `.csv` et fichiers de définition `.def` dans `TMY3/`, et fichiers `.audit`, `.ddy` et `.stat` dans `AUDIT-DDY-STAT/` ;
+* `TMY_PVGIS/` — fichiers CSV dans `CSV/` et fichiers EPW dans `EPW/`.
+
+Les noms de fichiers indiquent la source et le site, par exemple `TMY-Meteonorm_ATEXIA.csv` et `TMY-PVGIS_ATEXIA.csv`.
 
 
 ## Formats
