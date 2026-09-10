@@ -181,7 +181,7 @@ Contient les TMYs générés à partir des observations des stations météorolo
 
 ### TMY_Centrales_PV
 
-Contient les TMYs des centrales photovoltaïques, organisés par source :
+Contient les TMYs des centrales photovoltaïques exploitées par ALTERELEC. Ils sont organisés par source :
 
 * `TMY_Meteonorm/` — fichiers EPW dans `EPW/`, fichiers TMY3 `.csv` et fichiers de définition `.def` dans `TMY3/`, et fichiers `.audit`, `.ddy` et `.stat` dans `AUDIT-DDY-STAT/` ;
 * `TMY_PVGIS/` — fichiers CSV dans `CSV/` et fichiers EPW dans `EPW/`.
