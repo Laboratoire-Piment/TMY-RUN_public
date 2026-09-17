@@ -83,11 +83,8 @@ ou, au format TMY3 :
   <img src="images/carte.png" width="600">
 </p>
 
-## 3. TMYs Meteonorm
 
-Le dépôt contient également des **TMYs provenant de Meteonorm**, utilisés notamment comme source de comparaison et de référence dans l’évaluation des différents jeux de données météorologiques.
-
-## 4. TMYs pour les centrales photovoltaïques
+## 3. TMYs pour les centrales photovoltaïques
 
 Le dossier [`TMY_Centrales_PV/`](TMY_Centrales_PV/) rassemble des TMYs provenant de **Meteonorm** et de **PVGIS** pour sept sites de centrales photovoltaïques :
 
