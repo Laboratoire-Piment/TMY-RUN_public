@@ -1,6 +1,6 @@
 # TMY-RUN — Années Météorologiques Types pour le territoire de La Réunion
 
-**Dernière mise à jour : 10 septembre 2026**
+**Dernière mise à jour : 7 octobre 2026**
 
 ## Contexte
 
@@ -9,6 +9,8 @@ La Réunion présente une forte variabilité climatique à l’échelle du terri
 Dans ce contexte, l’utilisation de données météorologiques représentatives est essentielle pour les simulations énergétiques des bâtiments et l’évaluation de leurs performances. Le projet **TMY-RUN** vise à produire des Années Météorologiques Types (TMY) actualisées et adaptées aux conditions climatiques de La Réunion, avec une meilleure couverture spatiale et une prise en compte des données récentes.
 
 Ce dépôt rassemble plusieurs jeux de TMY produits à partir de différentes sources météorologiques.
+
+Les fichiers existants BRIO et stations ont été actualisés à partir des sorties `data/runs` (version `v2025`), en conservant les noms et l’organisation du dépôt. Chaque jeu BRIO contient 242 points correspondant aux sorties sources. Les six points sans équivalent (`i11_j08`, `i12_j07`, `i19_j11`, `i20_j12`, `i20_j13`, `i20_j14`) ont été retirés et les six nouveaux points (`i03_j19`, `i03_j20`, `i03_j21`, `i05_j13`, `i06_j12`, `i17_j22`) ont été intégrés dans les dossiers existants, avec leurs fichiers EPW, TMY3, CSV et fichiers associés. Les nouveaux sites de stations et rapports sans équivalent dans cette arborescence ne sont pas ajoutés lors de cette mise à jour.
 
 ## Sources de données
 

@@ -1,29 +1,28 @@
  -EnergyPlus Weather Converter V8.1.0.005
- -Input File Type=CUSTOM, with FileName=C:\Users\trandri1\work\TMY-RUN_public\TMY_BRIO_krigged\CSV_EPW\TMY_REU_i14_j14_krigged_lat-21.050_lon55.450.csv
+ -Input File Type=CUSTOM, with FileName=C:\Users\trandri1\work\runs\Brio\i14_j14\2025\krigged\format\TMY_BRIO_REU_i14_j14_krigged_lat-21.050_lon55.450_epw.csv
  -Out of Range Data items will NOT be corrected.
- -***Definitions file=c:\users\trandri1\work\tmy-run_public\tmy_brio_krigged\csv_epw\tmy_reu_i14_j14_krigged_lat-21.050_lon55.450.def
- Severe ** &location, key=City, entered # args >1, key is ignored.
- **  processing file="c:\users\trandri1\work\tmy-run_public\tmy_brio_krigged\csv_epw\tmy_reu_i14_j14_krigged_lat-21.050_lon55.450.def".
+ -***Definitions file=c:\users\trandri1\work\runs\brio\i14_j14\2025\krigged\format\tmy_brio_reu_i14_j14_krigged_lat-21.050_lon55.450_epw.def
  Def (Definitions) Location Processed Status
- From Reading Definitions File, file=c:\users\trandri1\work\tmy-run_public\tmy_brio_krigged\csv_epw\tmy_reu_i14_j14_krigged_lat-21.050_lon55.450.def
+ From Reading Definitions File, file=c:\users\trandri1\work\runs\brio\i14_j14\2025\krigged\format\tmy_brio_reu_i14_j14_krigged_lat-21.050_lon55.450_epw.def
  Location Latitude (InLat)	    -21.05
  Location Longitude (InLong)	     55.45
  Location Time Zone (InTime)	      4.00
  Location Elevation (InElev)	   1417.56
  Location WMO (InWMO)	61996 
- Location Country (Country)	REU                 
+ Location City (City)	REU_i14_j14_krigged_lat-21.050
+ Location Country (Country)	RE                  
  Def (Definitions) Weather Data Processed Status
- From Reading Definitions File, file=c:\users\trandri1\work\tmy-run_public\tmy_brio_krigged\csv_epw\tmy_reu_i14_j14_krigged_lat-21.050_lon55.450.def
+ From Reading Definitions File, file=c:\users\trandri1\work\runs\brio\i14_j14\2025\krigged\format\tmy_brio_reu_i14_j14_krigged_lat-21.050_lon55.450_epw.def
  Weather Data - Number Intervals per Hour	    1
  Weather Data - Time Hour Offset	      0.00
  Weather Data - Input File Type	custom    
  Def (Definitions) Miscellaneous Data Processed Status
- From Reading Definitions File, file=c:\users\trandri1\work\tmy-run_public\tmy_brio_krigged\csv_epw\tmy_reu_i14_j14_krigged_lat-21.050_lon55.450.def
- Misc Data - Comments 1	First version of the TMY-stations on TMY-RUN project 2025                                                                                                                                                                                                                                                                                                                                                       
- Misc Data - Source Data	TMY-RUN 2025                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+ From Reading Definitions File, file=c:\users\trandri1\work\runs\brio\i14_j14\2025\krigged\format\tmy_brio_reu_i14_j14_krigged_lat-21.050_lon55.450_epw.def
+ Misc Data - Comments 1	TMY-RUN unified pipeline                                                                                                                                                                                                                                                                                                                                                                                        
+ Misc Data - Source Data	TMY-RUN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
  Def (Definitions) Data Control Data Processed Status
  Note: Data Control only used in "Custom" input formats
- From Reading Definitions File, file=c:\users\trandri1\work\tmy-run_public\tmy_brio_krigged\csv_epw\tmy_reu_i14_j14_krigged_lat-21.050_lon55.450.def
+ From Reading Definitions File, file=c:\users\trandri1\work\runs\brio\i14_j14\2025\krigged\format\tmy_brio_reu_i14_j14_krigged_lat-21.050_lon55.450_epw.def
  Data Control - # Records to Skip	    2
  -***Processing Definitions file(s) complete.
  
@@ -37,16 +36,16 @@ Note ** Definitions taken from associated "def" file.
  Input Name	Skip Field (t/f)	Used by EnergyPlus	Conversion Factor	Field (from) First Record (before conversion	minimum value	maximum value	missing value
  month	F	y	1.000	[1]	1	12	9999.000
  day	F	y	1.000	[1]	1	31	99990.00
- year	F	n	1.000	[2022]	N/A	N/A	999900.0
+ year	F	n	1.000	[2025]	N/A	N/A	999900.0
  hour	F	y	1.000	[1]	0	24	1.000E+09
  minute	F	n	1.000	[0]	N/A	N/A	999.000
- datasource	F	n	1.000	[]	N/A	N/A	999.000
- drybulb	F	y	1.000	[12.374]	>-70 C	<70 C	99.900
- dewpoint	F	y	1.000	[8.804]	>-70 C	<70 C	99.900
- relhum	F	y	1.000	[78.000]	0 %	110 %	999.000
+ datasource	F	n	1.000	[A]	N/A	N/A	999.000
+ drybulb	F	y	1.000	[11.610]	>-70 C	<70 C	99.900
+ dewpoint	F	y	1.000	[7.960]	>-70 C	<70 C	99.900
+ relhum	F	y	1.000	[78]	0 %	110 %	999.000
  atmos_pressure	F	y	1.000	[85561.820]	31000 Pa	120000 Pa	999999.0
  exthorrad	F	n	1.000	[0.000]	0 Wh/m2	1415 Wh/m2	9999.000
- extdirrad	F	n	1.000	[1413.941]	0 Wh/m2	1415 Wh/m2	9999.000
+ extdirrad	F	n	1.000	[1413.982]	0 Wh/m2	1415 Wh/m2	9999.000
  ghi_infrared	T	*	1.000
  glohorrad	F	n	1.000	[0.000]	0 Wh/m2	1200 Wh/m2	9999.000
  dirnorrad	F	y	1.000	[0.000]	0 Wh/m2	1100 Wh/m2	9999.000
@@ -56,8 +55,8 @@ Note ** Definitions taken from associated "def" file.
  difhorillum	F	n	1.000	[0.000]	0 lux	80,000 lux	999900.0
  zenithlum	F	n	1.000	[-0.000]	0 Cd/m2	70,000 Cd/m2	9999.000
  winddir	F	y	1.000	[999]	0 deg	360 deg	999.000
- windspd	F	y	1.000	[0.388]	0 m/s	40 m/s	999.000
- total_sky_cover	F	n	1.000	[8.000]	0	10	99.000
+ windspd	F	y	1.000	[0.900]	0 m/s	40 m/s	999.000
+ total_sky_cover	F	n	1.000	[8]	0	10	99.000
  opaque_sky_cover	F	n	1.000	[99]	0	10	99.000
  visibility	F	n	1.000	[9999]	0 km	160.9 km	9999.000
  ceilhgt	F	n	1.000	[99999]	0 m	30,450 m	99999.00
@@ -70,22 +69,194 @@ Note ** Definitions taken from associated "def" file.
  albedo	F	n	1.000	[999]	>=0	1	9999.000
  liquid_precip_depth	F	y	1.000	[0.000]	0 mm	500 mm	999.000
  liquid_precip_quantity	T	*	1.000
- Warning ** Diffuse Horizontal Illuminance= 81269.0 lux on date= 1/ 3 at hour=12
- Warning ** Diffuse Horizontal Illuminance= 83237.9 lux on date= 1/ 3 at hour=13
- Warning ** Diffuse Horizontal Illuminance= 85686.2 lux on date= 2/ 3 at hour=12
- Warning ** Diffuse Horizontal Illuminance= 81374.3 lux on date=10/13 at hour=12
- Warning ** Diffuse Horizontal Illuminance= 84204.1 lux on date=10/31 at hour=12
- Warning ** Global Horizontal Illuminance=138640.8 lux on date=11/ 6 at hour=12
- Warning ** Global Horizontal Illuminance=138028.8 lux on date=11/ 6 at hour=13
- Warning ** Diffuse Horizontal Illuminance= 81894.2 lux on date=11/ 9 at hour=12
- Warning ** Diffuse Horizontal Illuminance= 81936.6 lux on date=11/ 9 at hour=13
- Warning ** Global Horizontal Illuminance=134600.4 lux on date=11/12 at hour=12
- Warning ** Global Horizontal Illuminance=134127.6 lux on date=11/12 at hour=13
- Warning ** Diffuse Horizontal Illuminance= 85292.2 lux on date=11/19 at hour=12
- Warning ** Diffuse Horizontal Illuminance= 81158.9 lux on date=11/22 at hour=12
- Warning ** Diffuse Horizontal Illuminance= 81425.3 lux on date=11/22 at hour=13
- Warning ** Diffuse Horizontal Illuminance= 80348.5 lux on date=11/26 at hour=12
- Warning ** Diffuse Horizontal Illuminance= 80725.5 lux on date=11/26 at hour=13
+ Warning ** Zenith Luminance=  -724.4 CD/m≤ on date= 2/ 5 at hour=19
+ Warning ** Zenith Luminance=  -323.1 CD/m≤ on date= 2/ 6 at hour=19
+ Warning ** Zenith Luminance=   -58.5 CD/m≤ on date= 2/ 7 at hour=19
+ Warning ** Zenith Luminance=   -50.0 CD/m≤ on date= 2/ 8 at hour=19
+ Warning ** Zenith Luminance=   -40.7 CD/m≤ on date= 2/ 9 at hour=19
+ Warning ** Zenith Luminance=   -43.1 CD/m≤ on date= 2/10 at hour=19
+ Warning ** Zenith Luminance=   -42.3 CD/m≤ on date= 2/11 at hour=19
+ Warning ** Zenith Luminance=   -20.7 CD/m≤ on date= 2/12 at hour=19
+ Warning ** Zenith Luminance=   -14.1 CD/m≤ on date= 2/13 at hour=19
+ Warning ** Zenith Luminance=   -23.5 CD/m≤ on date= 2/14 at hour=19
+ Warning ** Zenith Luminance=   -20.7 CD/m≤ on date= 2/15 at hour=19
+ Warning ** Zenith Luminance=   -22.0 CD/m≤ on date= 2/16 at hour=19
+ Warning ** Zenith Luminance=   -16.9 CD/m≤ on date= 2/17 at hour=19
+ Warning ** Zenith Luminance=   -15.6 CD/m≤ on date= 2/18 at hour=19
+ Warning ** Zenith Luminance=   -12.0 CD/m≤ on date= 2/19 at hour=19
+ Warning ** Zenith Luminance=   -10.8 CD/m≤ on date= 2/20 at hour=19
+ Warning ** Zenith Luminance=    -8.5 CD/m≤ on date= 2/21 at hour=19
+ Warning ** Zenith Luminance=    -8.4 CD/m≤ on date= 2/22 at hour=19
+ Warning ** Zenith Luminance=    -6.0 CD/m≤ on date= 2/23 at hour=19
+ Warning ** Zenith Luminance=    -5.1 CD/m≤ on date= 2/24 at hour=19
+ Warning ** Zenith Luminance=    -4.7 CD/m≤ on date= 2/25 at hour=19
+ Warning ** Zenith Luminance=    -6.9 CD/m≤ on date= 2/26 at hour=19
+ Warning ** Zenith Luminance=    -5.1 CD/m≤ on date= 2/27 at hour=19
+ Warning ** Zenith Luminance=    -3.9 CD/m≤ on date= 2/28 at hour=19
+ Warning ** Zenith Luminance=    -3.3 CD/m≤ on date= 3/ 1 at hour=19
+ Warning ** Zenith Luminance=    -2.8 CD/m≤ on date= 3/ 2 at hour=19
+ Warning ** Zenith Luminance=    -2.0 CD/m≤ on date= 3/ 3 at hour=19
+ Warning ** Zenith Luminance=    -1.1 CD/m≤ on date= 3/ 4 at hour=19
+ Warning ** Zenith Luminance=    -1.2 CD/m≤ on date= 3/ 5 at hour=19
+ Warning ** Zenith Luminance=    -0.5 CD/m≤ on date= 3/ 6 at hour=19
+ Warning ** Zenith Luminance=    -0.5 CD/m≤ on date= 3/ 7 at hour=19
+ Warning ** Zenith Luminance=    -0.6 CD/m≤ on date= 3/ 8 at hour=19
+ Warning ** Zenith Luminance=    -0.4 CD/m≤ on date= 3/ 9 at hour=19
+ Warning ** Zenith Luminance=    -0.3 CD/m≤ on date= 3/10 at hour=19
+ Warning ** Zenith Luminance=    -0.2 CD/m≤ on date= 3/11 at hour=19
+ Warning ** Zenith Luminance=    -0.1 CD/m≤ on date= 3/12 at hour=19
+ Warning ** Zenith Luminance=    -0.1 CD/m≤ on date= 3/13 at hour=19
+ Warning ** Zenith Luminance=    -0.1 CD/m≤ on date= 3/14 at hour=19
+ Warning ** Zenith Luminance=  -723.9 CD/m≤ on date= 4/22 at hour=18
+ Warning ** Zenith Luminance=  -300.0 CD/m≤ on date= 4/23 at hour=18
+ Warning ** Zenith Luminance=   -59.4 CD/m≤ on date= 4/24 at hour=18
+ Warning ** Zenith Luminance=   -38.2 CD/m≤ on date= 4/25 at hour=18
+ Warning ** Zenith Luminance=   -29.2 CD/m≤ on date= 4/26 at hour=18
+ Warning ** Zenith Luminance=   -40.4 CD/m≤ on date= 4/27 at hour=18
+ Warning ** Zenith Luminance=   -40.7 CD/m≤ on date= 4/28 at hour=18
+ Warning ** Zenith Luminance=   -41.3 CD/m≤ on date= 4/29 at hour=18
+ Warning ** Zenith Luminance=   -26.7 CD/m≤ on date= 4/30 at hour=18
+ Warning ** Zenith Luminance=   -25.5 CD/m≤ on date= 5/ 1 at hour=18
+ Warning ** Zenith Luminance=   -20.6 CD/m≤ on date= 5/ 2 at hour=18
+ Warning ** Zenith Luminance=   -13.4 CD/m≤ on date= 5/ 3 at hour=18
+ Warning ** Zenith Luminance=   -14.3 CD/m≤ on date= 5/ 4 at hour=18
+ Warning ** Zenith Luminance=   -14.7 CD/m≤ on date= 5/ 5 at hour=18
+ Warning ** Zenith Luminance=   -12.2 CD/m≤ on date= 5/ 6 at hour=18
+ Warning ** Zenith Luminance=    -5.9 CD/m≤ on date= 5/ 7 at hour=18
+ Warning ** Zenith Luminance=    -9.0 CD/m≤ on date= 5/ 8 at hour=18
+ Warning ** Zenith Luminance=   -10.0 CD/m≤ on date= 5/ 9 at hour=18
+ Warning ** Zenith Luminance=   -10.8 CD/m≤ on date= 5/10 at hour=18
+ Warning ** Zenith Luminance=    -8.2 CD/m≤ on date= 5/11 at hour=18
+ Warning ** Zenith Luminance=    -8.8 CD/m≤ on date= 5/12 at hour=18
+ Warning ** Zenith Luminance=    -7.0 CD/m≤ on date= 5/13 at hour=18
+ Warning ** Zenith Luminance=    -6.7 CD/m≤ on date= 5/14 at hour=18
+ Warning ** Zenith Luminance=    -6.4 CD/m≤ on date= 5/15 at hour=18
+ Warning ** Zenith Luminance=    -5.9 CD/m≤ on date= 5/16 at hour=18
+ Warning ** Zenith Luminance=    -5.0 CD/m≤ on date= 5/17 at hour=18
+ Warning ** Zenith Luminance=    -3.9 CD/m≤ on date= 5/18 at hour=18
+ Warning ** Zenith Luminance=    -2.6 CD/m≤ on date= 5/19 at hour=18
+ Warning ** Zenith Luminance=    -3.2 CD/m≤ on date= 5/20 at hour=18
+ Warning ** Zenith Luminance=    -2.5 CD/m≤ on date= 5/21 at hour=18
+ Warning ** Zenith Luminance=    -2.6 CD/m≤ on date= 5/22 at hour=18
+ Warning ** Zenith Luminance=    -3.4 CD/m≤ on date= 5/23 at hour=18
+ Warning ** Zenith Luminance=    -3.0 CD/m≤ on date= 5/24 at hour=18
+ Warning ** Zenith Luminance=    -2.5 CD/m≤ on date= 5/25 at hour=18
+ Warning ** Zenith Luminance=    -3.1 CD/m≤ on date= 5/26 at hour=18
+ Warning ** Zenith Luminance=    -3.1 CD/m≤ on date= 5/27 at hour=18
+ Warning ** Zenith Luminance=    -2.6 CD/m≤ on date= 5/28 at hour=18
+ Warning ** Zenith Luminance=    -2.2 CD/m≤ on date= 5/29 at hour=18
+ Warning ** Zenith Luminance=    -2.3 CD/m≤ on date= 5/30 at hour=18
+ Warning ** Zenith Luminance=    -2.9 CD/m≤ on date= 5/31 at hour=18
+ Warning ** Zenith Luminance=    -2.3 CD/m≤ on date= 6/ 1 at hour=18
+ Warning ** Zenith Luminance=    -1.9 CD/m≤ on date= 6/ 2 at hour=18
+ Warning ** Zenith Luminance=    -2.8 CD/m≤ on date= 6/ 3 at hour=18
+ Warning ** Zenith Luminance=    -2.4 CD/m≤ on date= 6/ 4 at hour=18
+ Warning ** Zenith Luminance=    -1.9 CD/m≤ on date= 6/ 5 at hour=18
+ Warning ** Zenith Luminance=    -1.7 CD/m≤ on date= 6/ 6 at hour=18
+ Warning ** Zenith Luminance=    -2.4 CD/m≤ on date= 6/ 7 at hour=18
+ Warning ** Zenith Luminance=    -1.5 CD/m≤ on date= 6/ 8 at hour=18
+ Warning ** Zenith Luminance=    -2.3 CD/m≤ on date= 6/ 9 at hour=18
+ Warning ** Zenith Luminance=    -1.8 CD/m≤ on date= 6/10 at hour=18
+ Warning ** Zenith Luminance=    -1.7 CD/m≤ on date= 6/11 at hour=18
+ Warning ** Zenith Luminance=    -1.9 CD/m≤ on date= 6/12 at hour=18
+ Warning ** Zenith Luminance=    -1.7 CD/m≤ on date= 6/13 at hour=18
+ Warning ** Zenith Luminance=    -2.5 CD/m≤ on date= 6/14 at hour=18
+ Warning ** Zenith Luminance=    -1.9 CD/m≤ on date= 6/15 at hour=18
+ Warning ** Zenith Luminance=    -2.7 CD/m≤ on date= 6/16 at hour=18
+ Warning ** Zenith Luminance=    -2.4 CD/m≤ on date= 6/17 at hour=18
+ Warning ** Zenith Luminance=    -2.9 CD/m≤ on date= 6/18 at hour=18
+ Warning ** Zenith Luminance=    -3.2 CD/m≤ on date= 6/19 at hour=18
+ Warning ** Zenith Luminance=    -3.7 CD/m≤ on date= 6/20 at hour=18
+ Warning ** Zenith Luminance=    -3.6 CD/m≤ on date= 6/21 at hour=18
+ Warning ** Zenith Luminance=    -2.4 CD/m≤ on date= 6/22 at hour=18
+ Warning ** Zenith Luminance=    -2.0 CD/m≤ on date= 6/23 at hour=18
+ Warning ** Zenith Luminance=    -3.2 CD/m≤ on date= 6/24 at hour=18
+ Warning ** Zenith Luminance=    -2.7 CD/m≤ on date= 6/25 at hour=18
+ Warning ** Zenith Luminance=    -4.2 CD/m≤ on date= 6/26 at hour=18
+ Warning ** Zenith Luminance=    -5.4 CD/m≤ on date= 6/27 at hour=18
+ Warning ** Zenith Luminance=    -5.8 CD/m≤ on date= 6/28 at hour=18
+ Warning ** Zenith Luminance=    -4.6 CD/m≤ on date= 6/29 at hour=18
+ Warning ** Zenith Luminance=    -5.5 CD/m≤ on date= 6/30 at hour=18
+ Warning ** Zenith Luminance=    -4.1 CD/m≤ on date= 7/ 1 at hour=18
+ Warning ** Zenith Luminance=    -6.0 CD/m≤ on date= 7/ 2 at hour=18
+ Warning ** Zenith Luminance=    -7.6 CD/m≤ on date= 7/ 3 at hour=18
+ Warning ** Zenith Luminance=    -6.7 CD/m≤ on date= 7/ 4 at hour=18
+ Warning ** Zenith Luminance=    -7.5 CD/m≤ on date= 7/ 5 at hour=18
+ Warning ** Zenith Luminance=    -5.7 CD/m≤ on date= 7/ 6 at hour=18
+ Warning ** Zenith Luminance=    -8.7 CD/m≤ on date= 7/ 7 at hour=18
+ Warning ** Zenith Luminance=   -11.2 CD/m≤ on date= 7/ 8 at hour=18
+ Warning ** Zenith Luminance=    -9.5 CD/m≤ on date= 7/ 9 at hour=18
+ Warning ** Zenith Luminance=   -10.4 CD/m≤ on date= 7/10 at hour=18
+ Warning ** Zenith Luminance=   -10.3 CD/m≤ on date= 7/11 at hour=18
+ Warning ** Zenith Luminance=   -14.2 CD/m≤ on date= 7/12 at hour=18
+ Warning ** Zenith Luminance=   -15.6 CD/m≤ on date= 7/13 at hour=18
+ Warning ** Zenith Luminance=   -15.3 CD/m≤ on date= 7/14 at hour=18
+ Warning ** Zenith Luminance=   -17.4 CD/m≤ on date= 7/15 at hour=18
+ Warning ** Zenith Luminance=   -13.5 CD/m≤ on date= 7/16 at hour=18
+ Warning ** Zenith Luminance=   -12.7 CD/m≤ on date= 7/17 at hour=18
+ Warning ** Zenith Luminance=   -16.6 CD/m≤ on date= 7/18 at hour=18
+ Warning ** Zenith Luminance=   -20.4 CD/m≤ on date= 7/19 at hour=18
+ Warning ** Zenith Luminance=   -15.5 CD/m≤ on date= 7/20 at hour=18
+ Warning ** Zenith Luminance=   -19.1 CD/m≤ on date= 7/21 at hour=18
+ Warning ** Zenith Luminance=   -12.2 CD/m≤ on date= 7/22 at hour=18
+ Warning ** Zenith Luminance=   -16.5 CD/m≤ on date= 7/23 at hour=18
+ Warning ** Zenith Luminance=   -26.0 CD/m≤ on date= 7/24 at hour=18
+ Warning ** Zenith Luminance=   -21.3 CD/m≤ on date= 7/25 at hour=18
+ Warning ** Zenith Luminance=   -31.7 CD/m≤ on date= 7/26 at hour=18
+ Warning ** Zenith Luminance=   -36.0 CD/m≤ on date= 7/27 at hour=18
+ Warning ** Zenith Luminance=   -31.2 CD/m≤ on date= 7/28 at hour=18
+ Warning ** Zenith Luminance=   -52.1 CD/m≤ on date= 7/29 at hour=18
+ Warning ** Zenith Luminance=   -37.3 CD/m≤ on date= 7/30 at hour=18
+ Warning ** Zenith Luminance=   -57.6 CD/m≤ on date= 7/31 at hour=18
+ Warning ** Zenith Luminance=   -66.5 CD/m≤ on date= 8/ 1 at hour=18
+ Warning ** Zenith Luminance=  -422.2 CD/m≤ on date= 8/ 2 at hour=18
+ Warning ** Zenith Luminance=  -646.3 CD/m≤ on date= 8/ 3 at hour=18
+ Warning ** Zenith Luminance= -1639.7 CD/m≤ on date= 8/ 4 at hour=18
+ Warning ** Zenith Luminance=    -0.1 CD/m≤ on date=11/12 at hour=19
+ Warning ** Zenith Luminance=    -0.1 CD/m≤ on date=11/13 at hour=19
+ Warning ** Zenith Luminance=    -0.1 CD/m≤ on date=11/14 at hour=19
+ Warning ** Zenith Luminance=    -0.1 CD/m≤ on date=11/15 at hour=19
+ Warning ** Zenith Luminance=    -0.2 CD/m≤ on date=11/16 at hour=19
+ Warning ** Zenith Luminance=    -0.2 CD/m≤ on date=11/17 at hour=19
+ Warning ** Zenith Luminance=    -0.3 CD/m≤ on date=11/18 at hour=19
+ Warning ** Zenith Luminance=    -0.3 CD/m≤ on date=11/19 at hour=19
+ Warning ** Zenith Luminance=    -0.4 CD/m≤ on date=11/20 at hour=19
+ Warning ** Zenith Luminance=    -0.5 CD/m≤ on date=11/21 at hour=19
+ Warning ** Zenith Luminance=    -0.5 CD/m≤ on date=11/22 at hour=19
+ Warning ** Zenith Luminance=    -0.6 CD/m≤ on date=11/23 at hour=19
+ Warning ** Zenith Luminance=    -0.9 CD/m≤ on date=11/24 at hour=19
+ Warning ** Zenith Luminance=    -0.8 CD/m≤ on date=11/25 at hour=19
+ Warning ** Zenith Luminance=    -1.1 CD/m≤ on date=11/26 at hour=19
+ Warning ** Zenith Luminance=    -1.4 CD/m≤ on date=11/27 at hour=19
+ Warning ** Zenith Luminance=    -1.6 CD/m≤ on date=11/28 at hour=19
+ Warning ** Zenith Luminance=    -2.5 CD/m≤ on date=11/29 at hour=19
+ Warning ** Zenith Luminance=    -2.4 CD/m≤ on date=11/30 at hour=19
+ Warning ** Zenith Luminance=    -2.5 CD/m≤ on date=12/ 1 at hour=19
+ Warning ** Zenith Luminance=    -4.0 CD/m≤ on date=12/ 2 at hour=19
+ Warning ** Zenith Luminance=    -2.3 CD/m≤ on date=12/ 3 at hour=19
+ Warning ** Zenith Luminance=    -5.9 CD/m≤ on date=12/ 4 at hour=19
+ Warning ** Zenith Luminance=    -7.1 CD/m≤ on date=12/ 5 at hour=19
+ Warning ** Zenith Luminance=    -8.8 CD/m≤ on date=12/ 6 at hour=19
+ Warning ** Zenith Luminance=    -8.4 CD/m≤ on date=12/ 7 at hour=19
+ Warning ** Zenith Luminance=    -6.4 CD/m≤ on date=12/ 8 at hour=19
+ Warning ** Zenith Luminance=    -7.5 CD/m≤ on date=12/ 9 at hour=19
+ Warning ** Zenith Luminance=    -8.4 CD/m≤ on date=12/10 at hour=19
+ Warning ** Zenith Luminance=    -8.5 CD/m≤ on date=12/11 at hour=19
+ Warning ** Zenith Luminance=   -10.8 CD/m≤ on date=12/12 at hour=19
+ Warning ** Zenith Luminance=   -16.9 CD/m≤ on date=12/13 at hour=19
+ Warning ** Zenith Luminance=   -18.6 CD/m≤ on date=12/14 at hour=19
+ Warning ** Zenith Luminance=   -19.9 CD/m≤ on date=12/15 at hour=19
+ Warning ** Zenith Luminance=   -20.6 CD/m≤ on date=12/16 at hour=19
+ Warning ** Zenith Luminance=   -27.6 CD/m≤ on date=12/17 at hour=19
+ Warning ** Zenith Luminance=   -31.7 CD/m≤ on date=12/18 at hour=19
+ Warning ** Zenith Luminance=   -36.5 CD/m≤ on date=12/19 at hour=19
+ Warning ** Zenith Luminance=   -30.6 CD/m≤ on date=12/20 at hour=19
+ Warning ** Zenith Luminance=   -54.8 CD/m≤ on date=12/21 at hour=19
+ Warning ** Zenith Luminance=   -54.1 CD/m≤ on date=12/22 at hour=19
+ Warning ** Zenith Luminance=   -66.3 CD/m≤ on date=12/23 at hour=19
+ Warning ** Zenith Luminance=  -344.5 CD/m≤ on date=12/24 at hour=19
+ Warning ** Zenith Luminance=  -672.8 CD/m≤ on date=12/25 at hour=19
+ Warning ** Zenith Luminance= -2742.8 CD/m≤ on date=12/26 at hour=19
  Warning ** Missing Data Found on Source Weather Data File
  ** Missing (and corrected) Wind Direction, Number of items= 8760
  ** Missing (and corrected) Visibility, Number of items= 8760
@@ -101,7 +272,7 @@ Note ** Definitions taken from associated "def" file.
 
  - Actual Data Years for Monthly Data**
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	         	 2022	 2012	 2021	 2018	 2017	 2018	 2023	 2021	 2011	 2016	 2016	 2013	
+ 	         	 2025	 2025	 2025	 2025	 2025	 2025	 2025	 2025	 2025	 2025	 2025	 2025	
  - ** Not all weather data sources represent contiguous years.
  - ** Monthly data values may come from different years.
 
@@ -112,29 +283,24 @@ Note ** Definitions taken from associated "def" file.
 
  - Data Sources should be checked for relevancy to these statistics.
 
- Average Delta DB Change=  0.85∞C ; Std Dev=  0.79∞C
- Average Delta DP Change=  0.24∞C ; Std Dev=  0.43∞C
- Average Delta Relative Humidity Change=  4.05% ; Std Dev=  4.45%
- Average Delta Wind Speed Change=  0.28m/s ; Std Dev=  0.47m/s
- Hourly Dry Bulb temperature change trigger = minimum of  12.14∞C  and  10.∞C
-     12.14∞C = calculated trigger based on mean change in dry-bulb temperature and standard deviation shown above
+ Average Delta DB Change=  0.84∞C ; Std Dev=  0.75∞C
+ Average Delta DP Change=  0.25∞C ; Std Dev=  0.45∞C
+ Average Delta Relative Humidity Change=  4.02% ; Std Dev=  4.33%
+ Average Delta Wind Speed Change=  0.40m/s ; Std Dev=  0.72m/s
+ Hourly Dry Bulb temperature change trigger = minimum of  11.74∞C  and  10.∞C
+     11.74∞C = calculated trigger based on mean change in dry-bulb temperature and standard deviation shown above
      10.∞C = trigger set by user
 
- Changes indicated in delta temperatures, details follow.
- *****
- - Delta DB/DP Range Triggered for Sep  9
- - Change in DB=-10.08∞C, Hour= 9
-
- -Output File Type=epw, with FileName=C:\Users\trandri1\work\TMY-RUN_public\TMY_BRIO_krigged\EPW\TMY_REU_i14_j14_krigged_lat-21.050_lon55.450.epw
- -Output File URL= Ô¬ W6tPÓ¬ 7ÄÔ¬ tÔ¬     ˛útPÓ¬ 7ÄÔ¬ PÔ¬ v=©∏ ~rÄÔ¬       	    Ô¬ Ut$      Ä>Ÿ∞ÛPr       êæﬁ Ä>ŸîÓ¬ ∞Ó¬ ´,OrÄ>Ÿ†\y®Ó¬ êæﬁ êæﬁ    mê]tÄ>Ÿ∏Ó¬ ^MUr            ¸Ó¬ 7    êæﬁ         ¯Ó¬         @Ó¬ p]å˜¬ åÍt÷·√›    t¬ §¶tPÔ¬  Ô¬ UtÄÔ¬ 	    Ô¬ TStUtTStUtTStUtTSt
+ -Output File Type=epw, with FileName=C:\Users\trandri1\work\runs\Brio\i14_j14\2025\krigged\format\TMY_BRIO_REU_i14_j14_krigged_lat-21.050_lon55.450_epw.epw
+ -Output File URL= ˆW6tPı7Äˆtˆ    ˛ú˚sPı7ÄˆPˆÑk |∏ srÄˆ      	    ˆU¸s$      ‡^∞ÛEr       –öG‡^îı∞ı´,Dr‡^†\≈®ı–öG–öG   (`qê]¸s‡^∏ı^MJr            ¸ı7    –öG        ¯ı        @ı†ÂÑ˛åÍ˚s$Æ(    l˜§¶˚sPˆ ˆU¸sÄˆ	    ˆTS¸sU¸sTS¸sU¸sTS¸sU¸sTS¸s
 
 
- Statistics for TMY_REU_i14_j14_krigged_lat-21.050_lon55.450
- Location -- UnknownCity - REU  
+ Statistics for TMY_BRIO_REU_i14_j14_krigged_lat-21.050_lon55.450_epw
+ Location -- REU_i14_j14_krigged_lat-21.050 - RE  
       {S 21∞  2'} {E  55∞ 27'} {GMT +4.0 Hours}
  Elevation --  1418m above sea level
  Standard Pressure at Elevation --  85415Pa
- Data Source -- TMY-RUN 2025
+ Data Source -- TMY-RUN
 
  -WMO Station 61996 
 
@@ -146,30 +312,30 @@ Note ** Definitions taken from associated "def" file.
 
  	Design Stat	Coldest Month	HDB 99.6%	HDB 99%
  	   Units   	    {}   	   {C}   	  {C}  
- 	  Heating  	 8	  3.1	  3.6
+ 	  Heating  	 7	  3.5	  4.2
 
  	Design Stat	Hottest Month	CDB .4%	CDB 1%	CDB 2%	CDP .4%	CDP 1%	CDP 2%
      Units   	  {C}  	  {C} 	  {C} 	  {C}  	  {C} 	  {C} 
- 	  Cooling  	 1	 25.1	 24.3	 23.5	 18.2	 17.9	 17.4
+ 	  Cooling  	 1	 25.1	 24.5	 23.7	 18.2	 17.9	 17.4
 
  	Design Stat	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec
  	   Units   	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}	{m/s}
- 	Max WS	 11.7	 12.5	  9.0	  6.5	  4.1	 12.5	 12.4	  6.9	  9.8	  6.9	 12.9	 11.7
+ 	Max WS	 11.7	 12.8	  7.1	 13.6	 14.9	 11.9	 17.3	 10.4	 13.6	 13.8	 11.7	  7.3
 
  - Heating/Cooling Degree Days/Hours calculated from this weather file are later in this report.
 
  - Monthly Statistics for Dry Bulb temperatures ∞C
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	Maximum 	 25.6	 24.6	 23.9	 23.1	 21.2	 19.4	 19.3	 19.1	 19.9	 21.6	 23.0	 22.9	
- 	 Day:Hour	17:15	11:15	24:15	 3:15	29:15	 7:15	19:15	14:16	21:15	31:15	12:15	19:14	
+ 	Maximum 	 25.6	 24.6	 23.9	 22.5	 21.2	 20.1	 18.3	 19.1	 20.4	 21.6	 24.2	 22.9	
+ 	 Day:Hour	17:16	11:15	24:15	12:15	23:15	14:15	14:15	 4:15	29:15	31:15	16:15	19:15	
 
- 	Minimum 	  7.9	 11.1	  8.9	  7.8	  6.1	  3.4	  2.8	  2.5	  3.7	  5.3	  6.7	  7.4	
- 	 Day:Hour	25:07	 5:07	18:08	27:08	25:08	30:08	 1:08	25:08	 9:08	 2:07	 8:07	 5:07	
+ 	Minimum 	  7.9	 11.1	  8.9	  6.7	  5.2	  3.5	  2.9	  4.7	  3.6	  5.3	  6.1	  7.4	
+ 	 Day:Hour	25:07	 5:07	18:08	28:08	28:08	26:08	12:08	29:08	16:08	 2:07	11:07	 5:07	
 
- 	Daily Avg	17.7 	18.1 	17.3 	16.3 	14.2 	12.0 	11.4 	10.6 	11.8 	13.8 	15.2 	16.4 	
+ 	Daily Avg	17.8 	18.1 	17.3 	16.4 	14.2 	12.6 	11.2 	11.4 	11.8 	13.8 	15.5 	16.4 	
 
    - Maximum Dry Bulb temperature of  25.6∞C on Jan 17
-   - Minimum Dry Bulb temperature of   2.5∞C on Aug 25
+   - Minimum Dry Bulb temperature of   2.9∞C on Jul 12
 
  - Monthly Statistics for Extreme Dry Bulb temperatures ∞C
  	  #Days  	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
@@ -180,126 +346,126 @@ Note ** Definitions taken from associated "def" file.
 
  - Monthly Statistics for Dew Point temperatures ∞C
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	Maximum 	18.2 	18.7 	18.0 	15.7 	15.4 	14.0 	13.0 	10.8 	10.2 	12.8 	16.7 	17.3 	
- 	 Day:Hour	15:16	18:14	 7:15	 3:15	 4:15	 9:15	14:14	30:15	 3:15	25:15	30:15	 1:15	
+ 	Maximum 	18.2 	18.7 	18.0 	17.4 	14.6 	12.1 	11.3 	9.5  	10.9 	12.8 	15.7 	17.3 	
+ 	 Day:Hour	15:16	18:15	 7:15	20:15	 8:15	13:15	20:15	 2:15	 8:15	25:15	25:15	 1:15	
 
- 	Minimum 	5.0  	9.1  	6.1  	4.9  	2.4  	-1.1 	-1.8 	-3.1 	-0.8 	0.1  	2.8  	1.0  	
- 	 Day:Hour	25:16	 3:16	18:15	29:15	16:15	29:14	 1:15	23:15	16:16	 1:15	 8:15	 6:15	
+ 	Minimum 	5.0  	9.1  	6.1  	1.9  	1.3  	0.2  	-3.4 	-1.6 	-1.9 	0.1  	1.6  	1.0  	
+ 	 Day:Hour	25:15	 3:16	18:15	28:15	27:15	28:15	11:15	25:15	15:08	 1:15	 6:15	 6:15	
 
- 	Daily Avg	13.1 	13.9 	12.8 	11.5 	8.8  	6.2  	4.7  	4.6  	5.1  	7.2  	9.1  	11.0 	
+ 	Daily Avg	13.1 	13.9 	12.8 	11.9 	9.0  	6.4  	5.5  	4.4  	4.4  	7.2  	8.8  	11.0 	
 
    - Maximum Dew Point temperature of  18.7∞C on Feb 18
-   - Minimum Dew Point temperature of  -3.1∞C on Aug 23
+   - Minimum Dew Point temperature of  -3.4∞C on Jul 11
 
  - Average Hourly Statistics for Dry Bulb temperatures ∞C
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	 0:01- 1:00	 15.1	 15.8	 14.8	 13.9	 11.8	  9.6	  8.7	  8.0	  9.0	 10.7	 12.1	 13.5	
- 	 1:01- 2:00	 14.6	 15.4	 14.4	 13.5	 11.4	  9.1	  8.2	  7.6	  8.5	 10.2	 11.6	 13.0	
- 	 2:01- 3:00	 14.2	 15.0	 14.0	 13.2	 11.0	  8.7	  7.8	  7.2	  8.1	  9.8	 11.2	 12.6	
- 	 3:01- 4:00	 13.7	 14.6	 13.5	 12.8	 10.7	  8.3	  7.3	  6.8	  7.7	  9.3	 10.7	 12.1	
- 	 4:01- 5:00	 13.3	 14.2	 13.1	 12.4	 10.3	  7.9	  6.9	  6.4	  7.2	  8.9	 10.3	 11.7	
- 	 5:01- 6:00	 13.0	 13.9	 12.8	 12.1	 10.0	  7.5	  6.5	  6.1	  6.9	  8.6	 10.0	 11.4	
- 	 6:01- 7:00	 12.8	 13.7	 12.5	 11.9	  9.7	  7.3	  6.2	  5.8	  6.6	  8.3	  9.6	 11.1	
- 	 7:01- 8:00	 15.1	 14.1	 12.3	 11.7	  9.5	  7.0	  5.9	  5.5	  6.9	 11.6	 13.6	 14.6	
- 	 8:01- 9:00	 16.6	 17.5	 16.7	 15.6	 13.1	 10.4	  9.4	  9.6	 11.6	 13.4	 15.2	 16.0	
- 	 9:01-10:00	 18.0	 18.9	 18.3	 17.3	 14.9	 12.4	 11.6	 11.4	 13.3	 15.1	 16.7	 17.4	
- 	10:01-11:00	 19.4	 20.1	 19.6	 18.6	 16.4	 14.1	 13.5	 13.0	 14.6	 16.5	 17.9	 18.7	
- 	11:01-12:00	 20.6	 21.1	 20.7	 19.7	 17.7	 15.5	 15.1	 14.2	 15.6	 17.6	 19.0	 19.8	
- 	12:01-13:00	 21.4	 21.7	 21.5	 20.4	 18.5	 16.5	 16.3	 15.1	 16.4	 18.5	 19.7	 20.5	
- 	13:01-14:00	 22.0	 22.2	 21.9	 20.9	 19.0	 17.2	 16.9	 15.6	 16.8	 18.9	 20.2	 21.0	
- 	14:01-15:00	 22.3	 22.4	 22.1	 21.0	 19.1	 17.3	 17.1	 15.9	 16.9	 19.0	 20.3	 21.2	
- 	15:01-16:00	 22.4	 22.4	 21.8	 20.7	 18.6	 16.8	 16.8	 15.6	 16.6	 18.6	 20.0	 21.1	
- 	16:01-17:00	 22.0	 21.9	 21.1	 19.8	 17.7	 15.8	 15.7	 14.8	 15.8	 17.8	 19.3	 20.6	
- 	17:01-18:00	 21.3	 21.1	 20.0	 18.6	 16.9	 14.9	 14.7	 13.5	 14.5	 16.7	 18.3	 19.7	
- 	18:01-19:00	 20.2	 20.2	 19.2	 17.9	 16.1	 14.1	 13.8	 12.6	 13.7	 15.8	 17.3	 18.6	
- 	19:01-20:00	 19.3	 19.4	 18.4	 17.1	 15.3	 13.2	 12.9	 11.8	 12.8	 14.9	 16.4	 17.7	
- 	20:01-21:00	 18.4	 18.6	 17.6	 16.4	 14.5	 12.4	 12.0	 11.0	 12.0	 14.0	 15.4	 16.8	
- 	21:01-22:00	 17.5	 17.8	 16.8	 15.7	 13.7	 11.6	 11.0	 10.2	 11.1	 13.1	 14.5	 15.8	
- 	22:01-23:00	 16.6	 17.0	 16.0	 14.9	 12.9	 10.7	 10.1	  9.3	 10.2	 12.1	 13.6	 14.9	
- 	23:01-24:00	 15.7	 16.2	 15.2	 14.2	 12.1	  9.9	  9.2	  8.5	  9.4	 11.2	 12.7	 13.9	
+ 	 0:01- 1:00	 15.1	 15.8	 14.8	 14.3	 11.8	 10.2	  8.9	  8.9	  8.7	 10.7	 12.2	 13.5	
+ 	 1:01- 2:00	 14.6	 15.4	 14.4	 13.9	 11.4	  9.8	  8.5	  8.4	  8.2	 10.3	 11.7	 13.0	
+ 	 2:01- 3:00	 14.2	 15.0	 14.0	 13.6	 11.0	  9.4	  8.1	  8.0	  7.7	  9.8	 11.2	 12.6	
+ 	 3:01- 4:00	 13.7	 14.6	 13.6	 13.3	 10.6	  8.9	  7.7	  7.6	  7.3	  9.4	 10.7	 12.1	
+ 	 4:01- 5:00	 13.3	 14.2	 13.2	 12.9	 10.2	  8.5	  7.3	  7.2	  6.8	  8.9	 10.2	 11.7	
+ 	 5:01- 6:00	 13.0	 13.9	 12.8	 12.7	  9.9	  8.2	  7.0	  6.9	  6.5	  8.6	  9.9	 11.4	
+ 	 6:01- 7:00	 12.8	 13.7	 12.6	 12.4	  9.6	  7.9	  6.7	  6.7	  6.2	  8.3	  9.6	 11.1	
+ 	 7:01- 8:00	 15.1	 14.1	 12.3	 12.2	  9.3	  7.7	  6.4	  6.4	  6.5	 11.5	 13.5	 14.4	
+ 	 8:01- 9:00	 16.7	 17.4	 16.6	 15.8	 13.1	 10.9	  9.5	 10.3	 11.4	 13.4	 15.3	 16.0	
+ 	 9:01-10:00	 18.2	 18.8	 18.2	 17.2	 14.9	 12.9	 11.4	 12.1	 13.3	 15.0	 17.0	 17.5	
+ 	10:01-11:00	 19.6	 20.0	 19.6	 18.5	 16.5	 14.6	 13.1	 13.7	 14.8	 16.5	 18.4	 18.7	
+ 	11:01-12:00	 20.7	 21.0	 20.7	 19.4	 17.7	 16.0	 14.4	 14.9	 16.1	 17.6	 19.5	 19.8	
+ 	12:01-13:00	 21.6	 21.8	 21.5	 20.2	 18.6	 17.0	 15.4	 15.8	 17.0	 18.4	 20.3	 20.6	
+ 	13:01-14:00	 22.1	 22.3	 22.0	 20.6	 19.1	 17.6	 16.0	 16.4	 17.5	 18.9	 20.8	 21.0	
+ 	14:01-15:00	 22.4	 22.5	 22.2	 20.7	 19.2	 17.8	 16.2	 16.6	 17.7	 19.1	 20.9	 21.3	
+ 	15:01-16:00	 22.4	 22.4	 22.0	 20.4	 18.8	 17.3	 15.9	 16.2	 17.3	 18.8	 20.6	 21.1	
+ 	16:01-17:00	 22.0	 21.9	 21.3	 19.6	 17.8	 16.3	 15.0	 15.4	 16.3	 18.0	 19.9	 20.6	
+ 	17:01-18:00	 21.2	 21.1	 20.2	 18.6	 17.0	 15.5	 14.0	 14.1	 14.9	 16.9	 18.7	 19.6	
+ 	18:01-19:00	 20.1	 20.1	 19.4	 17.9	 16.2	 14.6	 13.2	 13.2	 13.9	 15.9	 17.7	 18.6	
+ 	19:01-20:00	 19.2	 19.4	 18.5	 17.2	 15.4	 13.8	 12.4	 12.4	 13.0	 15.0	 16.7	 17.7	
+ 	20:01-21:00	 18.3	 18.6	 17.7	 16.5	 14.6	 13.0	 11.6	 11.6	 12.0	 14.1	 15.7	 16.7	
+ 	21:01-22:00	 17.4	 17.8	 16.9	 15.9	 13.8	 12.2	 10.8	 10.8	 11.1	 13.2	 14.7	 15.8	
+ 	22:01-23:00	 16.5	 17.0	 16.1	 15.2	 13.0	 11.3	 10.0	 10.0	 10.1	 12.2	 13.7	 14.9	
+ 	23:01-24:00	 15.6	 16.2	 15.3	 14.4	 12.1	 10.6	  9.3	  9.2	  9.2	 11.2	 12.8	 13.8	
  	 Max Hour  	  16 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	
  	 Min Hour  	   7 	   7 	   8 	   8 	   8 	   8 	   8 	   8 	   7 	   7 	   7 	   7 	
 
  - Average Hourly Statistics for Dew Point temperatures ∞C
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	 0:01- 1:00	 12.6	 13.3	 12.3	 11.2	  8.8	  6.2	  4.8	  4.6	  5.3	  7.3	  9.0	 10.6	
- 	 1:01- 2:00	 12.5	 13.2	 12.2	 11.2	  8.8	  6.2	  4.8	  4.6	  5.3	  7.3	  9.0	 10.5	
- 	 2:01- 3:00	 12.4	 13.1	 12.1	 11.1	  8.8	  6.2	  4.8	  4.6	  5.3	  7.3	  8.9	 10.5	
- 	 3:01- 4:00	 12.4	 13.0	 12.0	 11.1	  8.8	  6.1	  4.8	  4.6	  5.3	  7.3	  8.9	 10.4	
- 	 4:01- 5:00	 12.3	 12.9	 11.9	 11.0	  8.8	  6.1	  4.8	  4.6	  5.3	  7.3	  8.9	 10.3	
- 	 5:01- 6:00	 12.2	 12.8	 11.9	 11.0	  8.8	  6.1	  4.8	  4.6	  5.3	  7.4	  8.9	 10.3	
- 	 6:01- 7:00	 12.2	 12.8	 11.8	 10.9	  8.8	  6.1	  4.8	  4.6	  5.3	  7.4	  8.8	 10.2	
- 	 7:01- 8:00	 12.6	 12.8	 11.7	 10.9	  8.8	  6.1	  4.8	  4.6	  5.4	  7.3	  9.1	 10.9	
- 	 8:01- 9:00	 12.9	 13.8	 12.7	 11.4	  8.8	  6.2	  4.8	  4.6	  5.1	  7.2	  9.1	 11.1	
- 	 9:01-10:00	 13.2	 14.1	 13.0	 11.6	  8.8	  6.3	  4.7	  4.6	  5.0	  7.1	  9.1	 11.2	
- 	10:01-11:00	 13.4	 14.4	 13.3	 11.8	  8.8	  6.3	  4.7	  4.5	  4.9	  7.1	  9.1	 11.4	
- 	11:01-12:00	 13.6	 14.6	 13.5	 11.9	  8.8	  6.2	  4.6	  4.5	  4.8	  7.0	  9.1	 11.5	
- 	12:01-13:00	 13.8	 14.7	 13.7	 12.0	  8.8	  6.2	  4.6	  4.4	  4.8	  6.9	  9.1	 11.6	
- 	13:01-14:00	 13.9	 14.8	 13.7	 12.0	  8.8	  6.2	  4.6	  4.4	  4.8	  6.9	  9.2	 11.7	
- 	14:01-15:00	 13.9	 14.9	 13.8	 12.0	  8.8	  6.1	  4.5	  4.4	  4.8	  6.9	  9.2	 11.7	
- 	15:01-16:00	 13.9	 14.9	 13.7	 12.0	  8.8	  6.1	  4.6	  4.4	  4.8	  6.9	  9.1	 11.7	
- 	16:01-17:00	 13.9	 14.8	 13.6	 11.9	  8.8	  6.1	  4.6	  4.4	  4.9	  7.0	  9.1	 11.6	
- 	17:01-18:00	 13.7	 14.6	 13.3	 11.8	  8.8	  6.1	  4.7	  4.5	  5.0	  7.0	  9.1	 11.5	
- 	18:01-19:00	 13.6	 14.4	 13.2	 11.7	  8.8	  6.1	  4.7	  4.5	  5.0	  7.1	  9.1	 11.4	
- 	19:01-20:00	 13.4	 14.2	 13.0	 11.6	  8.8	  6.1	  4.7	  4.5	  5.1	  7.1	  9.1	 11.3	
- 	20:01-21:00	 13.3	 14.1	 12.9	 11.5	  8.8	  6.1	  4.7	  4.6	  5.1	  7.2	  9.1	 11.1	
- 	21:01-22:00	 13.1	 13.8	 12.7	 11.5	  8.8	  6.1	  4.7	  4.6	  5.1	  7.2	  9.1	 11.0	
- 	22:01-23:00	 13.0	 13.6	 12.5	 11.4	  8.7	  6.1	  4.8	  4.6	  5.2	  7.3	  9.1	 10.8	
- 	23:01-24:00	 12.8	 13.4	 12.5	 11.1	  8.6	  6.1	  4.9	  4.7	  5.2	  7.4	  9.2	 10.5	
- 	 Max Hour  	  15 	  15 	  15 	  15 	   9 	  10 	  24 	  24 	   8 	  24 	  24 	  15 	
- 	 Min Hour  	   7 	   7 	   8 	   8 	  24 	  24 	  15 	  15 	  14 	  15 	   7 	   7 	
+ 	 0:01- 1:00	 12.6	 13.3	 12.3	 11.7	  8.9	  6.5	  5.4	  4.8	  4.5	  7.3	  8.7	 10.6	
+ 	 1:01- 2:00	 12.5	 13.2	 12.2	 11.6	  8.9	  6.5	  5.4	  4.9	  4.5	  7.3	  8.6	 10.5	
+ 	 2:01- 3:00	 12.4	 13.1	 12.1	 11.6	  8.8	  6.5	  5.4	  5.0	  4.6	  7.3	  8.6	 10.5	
+ 	 3:01- 4:00	 12.3	 13.0	 12.0	 11.6	  8.8	  6.6	  5.4	  5.0	  4.6	  7.3	  8.6	 10.4	
+ 	 4:01- 5:00	 12.3	 12.9	 11.9	 11.6	  8.8	  6.6	  5.4	  5.1	  4.6	  7.3	  8.6	 10.3	
+ 	 5:01- 6:00	 12.2	 12.8	 11.9	 11.5	  8.8	  6.6	  5.4	  5.2	  4.6	  7.4	  8.6	 10.3	
+ 	 6:01- 7:00	 12.2	 12.8	 11.8	 11.5	  8.8	  6.6	  5.4	  5.2	  4.6	  7.4	  8.5	 10.2	
+ 	 7:01- 8:00	 12.6	 12.8	 11.7	 11.5	  8.7	  6.6	  5.4	  5.2	  4.6	  7.3	  8.7	 10.8	
+ 	 8:01- 9:00	 13.0	 13.7	 12.7	 11.8	  9.0	  6.5	  5.5	  4.6	  4.4	  7.2	  8.8	 11.0	
+ 	 9:01-10:00	 13.2	 14.1	 13.0	 12.0	  9.1	  6.4	  5.5	  4.3	  4.4	  7.1	  8.9	 11.2	
+ 	10:01-11:00	 13.5	 14.4	 13.3	 12.1	  9.1	  6.3	  5.5	  4.0	  4.3	  7.1	  8.9	 11.4	
+ 	11:01-12:00	 13.6	 14.6	 13.5	 12.1	  9.2	  6.2	  5.5	  3.8	  4.2	  7.0	  8.9	 11.5	
+ 	12:01-13:00	 13.8	 14.8	 13.7	 12.2	  9.2	  6.2	  5.5	  3.6	  4.2	  6.9	  8.9	 11.6	
+ 	13:01-14:00	 13.9	 14.9	 13.8	 12.2	  9.2	  6.1	  5.5	  3.5	  4.2	  6.9	  8.9	 11.7	
+ 	14:01-15:00	 13.9	 14.9	 13.8	 12.2	  9.2	  6.1	  5.5	  3.5	  4.2	  6.9	  8.9	 11.7	
+ 	15:01-16:00	 13.9	 14.9	 13.7	 12.2	  9.2	  6.1	  5.5	  3.5	  4.2	  6.9	  8.9	 11.7	
+ 	16:01-17:00	 13.9	 14.8	 13.6	 12.2	  9.2	  6.2	  5.5	  3.7	  4.2	  7.0	  8.9	 11.6	
+ 	17:01-18:00	 13.7	 14.6	 13.4	 12.1	  9.2	  6.3	  5.5	  4.0	  4.3	  7.0	  8.9	 11.5	
+ 	18:01-19:00	 13.5	 14.4	 13.2	 12.0	  9.1	  6.3	  5.5	  4.1	  4.3	  7.1	  8.9	 11.4	
+ 	19:01-20:00	 13.4	 14.2	 13.1	 12.0	  9.1	  6.4	  5.5	  4.3	  4.4	  7.1	  8.9	 11.3	
+ 	20:01-21:00	 13.3	 14.0	 12.9	 11.9	  9.1	  6.4	  5.5	  4.4	  4.4	  7.2	  8.8	 11.1	
+ 	21:01-22:00	 13.1	 13.9	 12.7	 11.8	  9.0	  6.5	  5.5	  4.6	  4.5	  7.2	  8.8	 11.0	
+ 	22:01-23:00	 13.0	 13.7	 12.5	 11.8	  9.0	  6.5	  5.5	  4.7	  4.5	  7.3	  8.8	 10.8	
+ 	23:01-24:00	 12.8	 13.4	 12.5	 11.5	  8.8	  6.5	  5.5	  4.7	  4.5	  7.3	  9.0	 10.5	
+ 	 Max Hour  	  16 	  15 	  15 	  15 	  15 	   8 	  24 	   8 	   8 	   7 	  24 	  15 	
+ 	 Min Hour  	   7 	   7 	   8 	   8 	   8 	  15 	   8 	  15 	  15 	  15 	   7 	   7 	
 
  - Monthly Statistics for Relative Humidity %
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	Maximum  	99   	96   	98   	98   	98   	98   	99   	97   	96   	97   	97   	96   	
- 	 Day:Hour 	16:07	 8:05	 7:06	22:03	 2:03	 6:04	14:21	 7:08	24:08	 8:02	13:07	 1:20	
+ 	Maximum  	99   	96   	98   	97   	98   	98   	96   	95   	98   	97   	98   	96   	
+ 	 Day:Hour 	16:07	 8:07	 7:04	20:21	 7:08	13:08	27:08	 5:08	 7:03	 8:01	 5:23	 1:05	
 
- 	Minimum  	35   	42   	34   	37   	35   	29   	24   	27   	28   	27   	31   	26   	
- 	 Day:Hour 	25:16	 3:16	18:15	27:15	25:14	18:14	29:15	23:14	19:14	18:14	 6:15	 6:15	
+ 	Minimum  	35   	42   	34   	30   	30   	32   	28   	30   	29   	27   	33   	26   	
+ 	 Day:Hour 	25:15	 3:16	18:15	29:14	10:15	 4:15	 4:15	29:14	21:14	18:15	 6:14	 6:14	
 
- 	Daily Avg	76   	77   	77   	75   	72   	70   	66   	68   	66   	67   	69   	72   	
+ 	Daily Avg	76   	77   	76   	76   	73   	68   	70   	65   	63   	67   	67   	72   	
 
  - Average Hourly Relative Humidity %
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	 0:01- 1:00	   85	   85	   86	   85	   82	   79	   77	   79	   78	   79	   81	   82	
- 	 1:01- 2:00	   87	   86	   87	   85	   83	   82	   79	   81	   80	   82	   83	   84	
- 	 2:01- 3:00	   88	   87	   88	   88	   86	   84	   82	   83	   82	   84	   86	   86	
- 	 3:01- 4:00	   90	   89	   90	   90	   88	   86	   84	   85	   84	   87	   88	   88	
- 	 4:01- 5:00	   92	   91	   91	   91	   89	   88	   87	   88	   87	   89	   91	   90	
- 	 5:01- 6:00	   93	   92	   93	   91	   91	   90	   88	   90	   89	   91	   92	   92	
- 	 6:01- 7:00	   94	   92	   94	   93	   92	   91	   90	   91	   91	   93	   94	   93	
- 	 7:01- 8:00	   84	   90	   95	   94	   94	   93	   92	   93	   90	   74	   74	   78	
- 	 8:01- 9:00	   78	   77	   77	   76	   75	   75	   72	   70	   64	   66	   67	   73	
- 	 9:01-10:00	   73	   73	   72	   69	   67	   66	   62	   63	   58	   59	   61	   68	
- 	10:01-11:00	   68	   69	   67	   65	   61	   59	   55	   56	   53	   54	   57	   63	
- 	11:01-12:00	   65	   66	   64	   61	   56	   55	   51	   52	   49	   51	   54	   60	
- 	12:01-13:00	   63	   65	   61	   59	   54	   52	   47	   50	   47	   48	   52	   58	
- 	13:01-14:00	   61	   64	   61	   58	   53	   50	   45	   48	   46	   47	   50	   56	
- 	14:01-15:00	   60	   63	   60	   58	   53	   49	   45	   47	   46	   47	   50	   57	
- 	15:01-16:00	   60	   64	   61	   58	   54	   51	   46	   48	   47	   47	   51	   57	
- 	16:01-17:00	   61	   66	   63	   61	   57	   54	   49	   51	   49	   50	   53	   58	
- 	17:01-18:00	   64	   68	   67	   66	   59	   57	   52	   56	   53	   54	   58	   61	
- 	18:01-19:00	   67	   71	   70	   69	   63	   59	   56	   59	   57	   57	   60	   65	
- 	19:01-20:00	   70	   73	   73	   72	   66	   63	   59	   62	   60	   61	   64	   68	
- 	20:01-21:00	   74	   76	   76	   75	   69	   66	   63	   65	   64	   65	   67	   71	
- 	21:01-22:00	   77	   79	   78	   77	   73	   70	   66	   69	   67	   68	   71	   74	
- 	22:01-23:00	   81	   81	   82	   81	   77	   73	   70	   73	   72	   73	   75	   77	
- 	23:01-24:00	   84	   84	   84	   82	   79	   77	   74	   77	   75	   76	   79	   80	
+ 	 0:01- 1:00	   85	   85	   85	   84	   82	   78	   79	   76	   75	   79	   79	   82	
+ 	 1:01- 2:00	   86	   86	   86	   86	   84	   80	   81	   78	   78	   82	   82	   85	
+ 	 2:01- 3:00	   88	   88	   88	   87	   86	   83	   83	   81	   81	   84	   85	   86	
+ 	 3:01- 4:00	   90	   89	   90	   88	   88	   85	   86	   83	   82	   87	   87	   88	
+ 	 4:01- 5:00	   92	   91	   92	   90	   90	   87	   88	   86	   85	   89	   89	   90	
+ 	 5:01- 6:00	   93	   92	   93	   92	   92	   89	   89	   88	   87	   91	   90	   91	
+ 	 6:01- 7:00	   94	   92	   94	   92	   93	   91	   91	   90	   89	   93	   92	   93	
+ 	 7:01- 8:00	   83	   90	   95	   94	   95	   93	   92	   92	   87	   75	   73	   78	
+ 	 8:01- 9:00	   77	   78	   77	   77	   75	   74	   76	   67	   62	   66	   66	   72	
+ 	 9:01-10:00	   72	   73	   71	   71	   68	   65	   67	   59	   55	   60	   59	   67	
+ 	10:01-11:00	   68	   70	   67	   67	   62	   58	   60	   52	   50	   54	   54	   63	
+ 	11:01-12:00	   65	   67	   63	   64	   58	   53	   56	   47	   46	   51	   51	   60	
+ 	12:01-13:00	   62	   65	   61	   61	   55	   50	   52	   44	   44	   48	   49	   58	
+ 	13:01-14:00	   61	   64	   60	   60	   54	   48	   50	   42	   42	   47	   47	   56	
+ 	14:01-15:00	   61	   64	   60	   60	   53	   47	   50	   42	   42	   46	   47	   56	
+ 	15:01-16:00	   60	   64	   61	   61	   55	   49	   51	   43	   43	   47	   48	   57	
+ 	16:01-17:00	   61	   65	   63	   65	   58	   52	   54	   46	   45	   50	   50	   58	
+ 	17:01-18:00	   64	   68	   66	   67	   61	   55	   58	   51	   50	   53	   54	   61	
+ 	18:01-19:00	   68	   71	   70	   70	   63	   58	   60	   54	   53	   57	   57	   65	
+ 	19:01-20:00	   71	   74	   73	   72	   67	   61	   64	   58	   57	   61	   61	   67	
+ 	20:01-21:00	   73	   76	   74	   76	   69	   65	   67	   61	   60	   64	   64	   70	
+ 	21:01-22:00	   76	   78	   77	   78	   74	   69	   70	   66	   64	   68	   68	   74	
+ 	22:01-23:00	   81	   82	   80	   81	   77	   73	   74	   70	   68	   72	   73	   77	
+ 	23:01-24:00	   84	   84	   83	   82	   80	   76	   77	   73	   72	   77	   77	   80	
  	 Max Hour  	   7 	   7 	   8 	   8 	   8 	   8 	   8 	   8 	   7 	   7 	   7 	   7 	
- 	 Min Hour  	  15 	  15 	  15 	  15 	  14 	  15 	  15 	  15 	  15 	  15 	  15 	  14 	
+ 	 Min Hour  	  16 	  16 	  14 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	  15 	
 
  - Monthly Indicators for Precipitation/Moisture (kPa)
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	         	  1.6	  1.7	  1.6	  1.4	  1.2	  1.0	  0.9	  0.9	  0.9	  1.0	  1.2	  1.4	
+ 	         	  1.6	  1.7	  1.6	  1.5	  1.2	  1.0	  0.9	  0.8	  0.8	  1.0	  1.2	  1.4	
 
  - Monthly Statistics for Wind Chill/Heat Index temperatures ∞C **
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	Minimum WC	     	     	     	     	     	    3	   -1	    1	   -4	   11	     	    8	
- 	 Day:Hour	     	     	     	     	     	26:02	30:02	25:06	26:07	31:05	     	 5:07	
+ 	Minimum WC	    7	     	    8	   -1	   -6	   -5	   -7	   -3	   -1	   -1	   -3	    4	
+ 	 Day:Hour	25:07	     	18:08	28:07	28:05	30:06	25:08	18:04	21:08	 2:07	 8:04	22:07	
 
- 	Average WC	     	     	     	     	     	    6	    5	    7	    4	   11	     	    8	
- 	Avg Del WC	     	     	     	     	     	    2	    2	    0	    4	   -1	     	   -1	
- 	 # Hours WC	     	     	     	     	     	   27	   38	   63	   26	    1	     	    2	
+ 	Average WC	    9	     	    9	    4	    5	    6	    3	    5	    5	    7	    7	    9	
+ 	Avg Del WC	   -1	     	    0	    4	    3	    2	    4	    3	    2	    2	    2	    0	
+ 	 # Hours WC	    7	     	    2	   23	   74	  135	  253	  257	  183	  113	   61	   28	
 
  	Maximum HI	     	     	     	     	     	     	     	     	     	     	     	     	
  	 Day:Hour	     	     	     	     	     	     	     	     	     	     	     	     	
@@ -323,45 +489,45 @@ Note ** Definitions taken from associated "def" file.
 
  - Monthly Statistics for Wind Speed m/s
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	Maximum 	11.7 	12.5 	9.0  	6.5  	4.1  	12.5 	12.4 	6.9  	9.8  	6.9  	12.9 	11.7 	
- 	 Day:Hour 	13:03	28:15	 9:13	 9:15	28:14	13:15	25:15	21:13	26:07	28:15	28:14	12:15	
+ 	Maximum 	11.7 	12.8 	7.1  	13.6 	14.9 	11.9 	17.3 	10.4 	13.6 	13.8 	11.7 	7.3  	
+ 	 Day:Hour 	11:24	26:24	 6:24	14:24	 9:22	 2:24	25:08	22:19	 7:23	 6:04	 4:11	21:06	
 
- 	Minimum 	0.2  	0.2  	0.2  	0.2  	0.2  	0.3  	0.4  	0.3  	0.3  	0.2  	0.1  	0.2  	
- 	 Day:Hour 	23:24	21:24	16:05	 3:24	10:24	22:24	29:01	18:24	 5:24	25:24	16:24	12:24	
+ 	Minimum 	0.5  	0.4  	0.3  	0.8  	0.2  	0.3  	0.4  	0.3  	0.2  	0.5  	0.2  	0.3  	
+ 	 Day:Hour 	 2:24	 5:06	28:24	21:24	16:23	14:23	19:23	26:24	12:24	10:14	22:24	 8:22	
 
- 	Daily Avg	1.7  	1.5  	1.3  	1.3  	1.0  	1.6  	1.7  	1.6  	1.4  	1.1  	0.9  	1.1  	
+ 	Daily Avg	2.1  	2.4  	1.8  	2.8  	2.5  	2.2  	3.4  	2.9  	2.5  	2.4  	2.0  	1.7  	
 
-   - Maximum Wind Speed of  12.9 m/s on Nov 28
-   - Minimum Wind Speed of   0.1 m/s on Nov 16
+   - Maximum Wind Speed of  17.3 m/s on Jul 25
+   - Minimum Wind Speed of   0.2 m/s on May 16
 
  - Average Hourly Statistics for Wind Speed m/s
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	 0:01- 1:00	  1.5	  0.9	  0.8	  0.8	  0.6	  1.1	  1.3	  1.0	  1.0	  0.7	  0.7	  0.7	
- 	 1:01- 2:00	  1.4	  0.9	  0.8	  0.8	  0.6	  1.1	  1.3	  0.9	  1.0	  0.7	  0.6	  0.7	
- 	 2:01- 3:00	  1.4	  0.8	  0.8	  0.8	  0.6	  1.1	  1.3	  0.9	  0.9	  0.7	  0.6	  0.6	
- 	 3:01- 4:00	  1.4	  0.9	  0.7	  0.8	  0.6	  1.0	  1.3	  1.0	  1.1	  0.7	  0.6	  0.6	
- 	 4:01- 5:00	  1.4	  0.8	  0.7	  0.8	  0.6	  0.9	  1.3	  1.0	  1.0	  0.7	  0.5	  0.6	
- 	 5:01- 6:00	  1.4	  0.8	  0.7	  0.8	  0.6	  0.9	  1.3	  1.1	  1.1	  0.6	  0.5	  0.6	
- 	 6:01- 7:00	  1.4	  0.8	  0.7	  0.8	  0.6	  0.9	  1.3	  1.0	  1.2	  0.7	  0.5	  0.6	
- 	 7:01- 8:00	  1.4	  0.9	  0.7	  0.8	  0.6	  1.0	  1.2	  1.1	  1.2	  0.7	  0.5	  0.6	
- 	 8:01- 9:00	  1.5	  1.0	  0.9	  0.9	  0.6	  1.2	  1.4	  1.3	  1.2	  0.9	  0.5	  0.7	
- 	 9:01-10:00	  1.6	  1.3	  1.0	  1.1	  0.7	  1.4	  1.5	  1.6	  1.4	  1.0	  0.6	  1.0	
- 	10:01-11:00	  1.9	  1.8	  1.4	  1.4	  1.1	  2.0	  2.0	  2.2	  1.7	  1.3	  1.0	  1.3	
- 	11:01-12:00	  2.2	  2.4	  1.9	  1.7	  1.4	  2.6	  2.3	  2.6	  1.9	  1.7	  1.2	  1.7	
- 	12:01-13:00	  2.8	  3.0	  2.6	  2.4	  2.1	  3.4	  3.0	  3.3	  2.5	  2.3	  1.8	  2.4	
- 	13:01-14:00	  3.0	  3.2	  2.8	  2.7	  2.4	  3.6	  3.4	  3.5	  2.6	  2.5	  2.1	  2.8	
- 	14:01-15:00	  3.1	  3.5	  3.2	  2.9	  2.7	  3.6	  3.6	  3.6	  2.8	  2.7	  2.2	  2.9	
- 	15:01-16:00	  2.6	  2.9	  2.8	  2.5	  2.1	  3.1	  3.2	  3.0	  2.3	  2.1	  1.8	  2.3	
- 	16:01-17:00	  2.3	  2.4	  2.0	  2.0	  1.7	  2.7	  2.4	  2.4	  1.9	  1.6	  1.4	  1.7	
- 	17:01-18:00	  1.6	  1.7	  1.5	  1.3	  1.1	  1.8	  1.7	  1.7	  1.5	  1.0	  0.8	  1.3	
- 	18:01-19:00	  1.3	  1.2	  1.0	  1.0	  0.8	  1.2	  1.3	  1.2	  1.2	  0.7	  0.6	  0.9	
- 	19:01-20:00	  1.1	  1.0	  0.9	  0.8	  0.7	  1.0	  1.1	  1.0	  1.0	  0.6	  0.5	  0.7	
- 	20:01-21:00	  1.1	  0.9	  0.7	  0.8	  0.6	  0.9	  1.1	  1.0	  0.9	  0.6	  0.5	  0.6	
- 	21:01-22:00	  1.1	  0.9	  0.8	  0.9	  0.6	  0.9	  1.1	  0.9	  0.9	  0.6	  0.5	  0.6	
- 	22:01-23:00	  1.1	  0.8	  0.7	  0.8	  0.6	  1.0	  1.1	  0.9	  0.9	  0.7	  0.6	  0.5	
- 	23:01-24:00	  1.7	  0.9	  0.9	  0.9	  0.6	  1.0	  1.3	  1.0	  1.1	  0.7	  0.8	  0.6	
- 	 Max Hour  	  15 	  15 	  15 	  15 	  15 	  14 	  15 	  15 	  15 	  15 	  15 	  15 	
- 	 Min Hour  	  21 	  23 	   5 	   6 	   2 	   7 	  23 	  22 	  23 	  21 	   8 	  23 	
+ 	 0:01- 1:00	  2.1	  2.4	  1.8	  3.1	  2.5	  2.3	  3.2	  2.9	  2.6	  2.8	  2.0	  1.6	
+ 	 1:01- 2:00	  2.0	  2.4	  1.7	  2.7	  2.5	  2.4	  3.2	  3.1	  2.4	  2.6	  2.2	  1.5	
+ 	 2:01- 3:00	  1.9	  2.3	  1.8	  2.8	  2.6	  2.1	  3.2	  2.8	  2.4	  2.5	  2.2	  1.4	
+ 	 3:01- 4:00	  1.9	  2.4	  1.8	  2.6	  2.7	  2.2	  3.3	  2.8	  2.4	  2.7	  2.3	  1.5	
+ 	 4:01- 5:00	  2.0	  2.4	  1.7	  2.5	  2.7	  2.2	  3.4	  2.9	  2.3	  2.7	  2.3	  1.5	
+ 	 5:01- 6:00	  2.0	  2.5	  1.5	  2.6	  2.6	  2.3	  3.3	  2.8	  2.4	  2.5	  2.2	  1.8	
+ 	 6:01- 7:00	  2.2	  2.4	  1.5	  2.7	  2.5	  2.1	  3.5	  2.8	  2.3	  2.3	  2.1	  1.6	
+ 	 7:01- 8:00	  2.1	  2.3	  1.6	  2.6	  2.5	  2.0	  3.8	  2.7	  2.4	  2.2	  2.2	  1.6	
+ 	 8:01- 9:00	  2.1	  2.1	  1.6	  2.8	  2.7	  2.2	  3.5	  2.8	  2.3	  2.3	  2.2	  1.6	
+ 	 9:01-10:00	  2.0	  2.1	  1.8	  3.0	  2.5	  2.4	  3.2	  2.9	  2.3	  2.3	  2.3	  1.5	
+ 	10:01-11:00	  2.2	  2.2	  1.7	  3.1	  2.5	  2.1	  3.2	  2.9	  2.4	  2.4	  2.2	  1.7	
+ 	11:01-12:00	  2.2	  2.2	  1.7	  2.9	  2.4	  2.1	  3.1	  2.7	  2.4	  2.5	  2.2	  1.7	
+ 	12:01-13:00	  2.4	  2.2	  1.7	  2.6	  2.4	  2.1	  3.3	  2.7	  2.4	  2.2	  2.0	  1.7	
+ 	13:01-14:00	  2.2	  2.1	  1.7	  2.8	  2.6	  2.2	  3.3	  2.8	  2.4	  2.2	  1.8	  1.6	
+ 	14:01-15:00	  2.2	  2.4	  1.7	  2.9	  2.6	  2.0	  3.2	  2.9	  2.3	  2.3	  1.7	  1.8	
+ 	15:01-16:00	  2.1	  2.3	  1.9	  2.7	  2.7	  2.0	  3.1	  3.1	  2.3	  2.5	  1.7	  1.8	
+ 	16:01-17:00	  2.2	  2.5	  1.9	  2.7	  2.5	  1.9	  3.2	  3.0	  2.3	  2.4	  1.5	  1.7	
+ 	17:01-18:00	  2.3	  2.8	  2.0	  2.8	  2.5	  2.1	  3.5	  2.9	  2.7	  2.4	  1.8	  1.7	
+ 	18:01-19:00	  2.3	  2.8	  2.0	  2.7	  2.5	  2.1	  3.7	  3.3	  2.6	  2.3	  1.7	  1.7	
+ 	19:01-20:00	  2.3	  2.6	  2.0	  2.8	  2.3	  2.1	  3.9	  2.9	  2.8	  2.5	  1.8	  1.6	
+ 	20:01-21:00	  2.2	  2.7	  2.0	  2.6	  2.5	  2.0	  4.0	  2.9	  2.7	  2.4	  1.8	  1.9	
+ 	21:01-22:00	  2.2	  2.6	  1.8	  2.6	  2.8	  2.1	  4.1	  2.8	  2.9	  2.6	  2.0	  1.8	
+ 	22:01-23:00	  2.2	  2.8	  1.9	  2.8	  2.6	  2.0	  3.8	  2.9	  2.9	  2.6	  2.0	  1.8	
+ 	23:01-24:00	  2.3	  3.0	  1.8	  3.3	  2.4	  2.5	  3.2	  2.9	  2.6	  2.6	  2.0	  1.8	
+ 	 Max Hour  	  13 	  24 	  19 	  24 	  22 	  24 	  22 	  19 	  23 	   1 	   4 	  21 	
+ 	 Min Hour  	   3 	  10 	   7 	   5 	  20 	  17 	  12 	   8 	  16 	  13 	  17 	   3 	
 
  - Average Hourly Statistics for Wind Direction ∞ {N=0 or 360,E=90,S=180,W=270}
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
@@ -394,8 +560,8 @@ Note ** Definitions taken from associated "def" file.
 
  - Monthly Statistics for Liquid Precipitation mm
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	  Total   	449  	353  	306  	309  	134  	108  	65   	186  	41   	83   	46   	93   	
- 	Max Hourly	73   	54   	139  	106  	55   	61   	12   	74   	10   	35   	6    	16   	
+ 	  Total   	450  	354  	300  	216  	35   	32   	32   	15   	39   	83   	99   	92   	
+ 	Max Hourly	73   	57   	139  	37   	5    	5    	5    	3    	21   	32   	32   	16   	
 
  - Monthly Statistics for Albedo
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
@@ -403,15 +569,15 @@ Note ** Definitions taken from associated "def" file.
 
  - Monthly Statistics for Solar Radiation  (Direct Normal, Diffuse, Global Horizontal) Wh/m≤
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	Direct Avg 	2340 	2202 	2757 	3308 	2917 	3069 	2220 	1847 	2042 	2234 	2846 	3263 	
+ 	Direct Avg 	0    	0    	0    	0    	0    	0    	0    	0    	0    	0    	0    	0    	
 
- 	Direct Max 	5607 	6414 	5905 	6552 	5566 	5013 	4046 	4151 	5851 	5598 	8440 	6752 	
- 	    Day    	  16 	  26 	  24 	  27 	  27 	  16 	  29 	  20 	  19 	  17 	   6 	   6 	
+ 	Direct Max 	0    	0    	0    	0    	0    	0    	0    	0    	0    	0    	1    	0    	
+ 	    Day    	   1 	  26 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	  16 	   6 	
 
- 	Diffuse Avg	3746 	3875 	3335 	2573 	2235 	1915 	2073 	2590 	3195 	3881 	3855 	3997 	
+ 	Diffuse Avg	612  	609  	585  	515  	429  	397  	353  	422  	538  	605  	693  	714  	
 
- 	Global Avg 	5294 	5266 	5060 	4628 	3821 	3535 	3223 	3633 	4458 	5233 	5707 	6171 	
-   - Maximum Direct Normal Solar of  8439 Wh/m≤ on Nov  6
+ 	Global Avg 	612  	609  	585  	515  	429  	397  	353  	422  	538  	605  	693  	714  	
+   - Maximum Direct Normal Solar of     0 Wh/m≤ on Nov 16
 
  - Average Hourly Statistics for Direct Normal Solar Radiation Wh/m≤
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
@@ -421,25 +587,25 @@ Note ** Definitions taken from associated "def" file.
  	 3:01- 4:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	 4:01- 5:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	 5:01- 6:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
- 	 6:01- 7:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    1	   15	   18	
- 	 7:01- 8:00	   31	   25	   35	   25	    2	    0	    0	    6	   36	   62	  102	   84	
- 	 8:01- 9:00	   74	   97	  124	  132	  101	  105	   60	   53	   97	   98	  132	  130	
- 	 9:01-10:00	  109	  119	  155	  230	  185	  193	  109	   76	  121	  157	  165	  187	
- 	10:01-11:00	  134	  136	  207	  277	  245	  268	  152	  132	  142	  124	  163	  210	
- 	11:01-12:00	  149	  145	  203	  320	  296	  327	  192	  146	  120	  130	  201	  232	
- 	12:01-13:00	  167	  141	  235	  368	  332	  396	  251	  167	  187	  159	  236	  246	
- 	13:01-14:00	  219	  158	  278	  444	  411	  451	  293	  210	  239	  223	  327	  315	
- 	14:01-15:00	  276	  255	  339	  493	  450	  490	  336	  310	  295	  302	  360	  376	
- 	15:01-16:00	  364	  304	  415	  499	  504	  503	  417	  353	  387	  337	  372	  468	
- 	16:01-17:00	  394	  352	  434	  494	  391	  336	  410	  395	  419	  380	  425	  495	
- 	17:01-18:00	  423	  470	  330	   25	    0	    0	    0	    0	    0	  260	  349	  504	
+ 	 6:01- 7:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 7:01- 8:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 8:01- 9:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 9:01-10:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	10:01-11:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	11:01-12:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	12:01-13:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	13:01-14:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	14:01-15:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	15:01-16:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	16:01-17:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	17:01-18:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	18:01-19:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	19:01-20:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	20:01-21:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	21:01-22:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	22:01-23:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	23:01-24:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
- 	 Max Hour*	  18*	  18*	  17*	  16*	  16*	  16*	  16*	  17*	  17*	  17*	  17*	  18*	
+ 	 Max Hour*	   1*	  13 	   1*	   1*	   1*	   1*	   1*	   1*	   1*	   1*	  13 	  13 	
  ** Possible error in Solar Radiation values (warning for <12pm or >3pm)
  	 Min Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
 
@@ -451,25 +617,25 @@ Note ** Definitions taken from associated "def" file.
  	 3:01- 4:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	 4:01- 5:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	 5:01- 6:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
- 	 6:01- 7:00	   40	   15	    3	    0	    0	    0	    0	    0	   11	   64	   97	   98	
- 	 7:01- 8:00	  169	  157	  131	  112	   72	   48	   39	   75	  138	  209	  233	  235	
- 	 8:01- 9:00	  285	  282	  259	  230	  196	  164	  153	  197	  266	  337	  347	  340	
- 	 9:01-10:00	  373	  383	  373	  314	  273	  241	  249	  298	  358	  428	  431	  428	
- 	10:01-11:00	  470	  495	  420	  364	  334	  284	  305	  359	  420	  530	  508	  515	
- 	11:01-12:00	  509	  534	  489	  374	  342	  285	  332	  382	  479	  569	  528	  540	
- 	12:01-13:00	  507	  522	  489	  353	  316	  278	  317	  377	  455	  546	  496	  528	
- 	13:01-14:00	  459	  511	  408	  295	  268	  229	  267	  342	  383	  433	  416	  459	
- 	14:01-15:00	  360	  394	  330	  224	  203	  169	  207	  257	  294	  336	  325	  357	
- 	15:01-16:00	  257	  296	  221	  171	  135	  117	  129	  175	  201	  226	  239	  245	
- 	16:01-17:00	  183	  196	  134	  102	   96	   99	   74	   98	  119	  131	  150	  159	
- 	17:01-18:00	  103	   90	   79	   34	    0	    0	    0	   30	   70	   71	   84	   92	
- 	18:01-19:00	   30	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	 6:01- 7:00	    5	    1	    0	    0	    0	    0	    0	    0	    1	    7	   12	   11	
+ 	 7:01- 8:00	   22	   19	   16	   13	    8	    5	    4	    9	   18	   27	   33	   32	
+ 	 8:01- 9:00	   41	   38	   37	   33	   27	   23	   20	   26	   38	   46	   54	   52	
+ 	 9:01-10:00	   57	   56	   55	   51	   44	   40	   34	   41	   54	   62	   71	   69	
+ 	10:01-11:00	   69	   69	   70	   65	   56	   52	   45	   53	   67	   74	   83	   82	
+ 	11:01-12:00	   77	   78	   78	   73	   63	   60	   52	   60	   74	   80	   89	   90	
+ 	12:01-13:00	   79	   81	   81	   75	   65	   62	   54	   62	   75	   81	   89	   91	
+ 	13:01-14:00	   76	   78	   78	   70	   60	   58	   51	   59	   70	   75	   84	   86	
+ 	14:01-15:00	   68	   70	   68	   60	   50	   48	   43	   50	   60	   64	   72	   76	
+ 	15:01-16:00	   55	   57	   53	   45	   36	   34	   31	   37	   45	   49	   56	   61	
+ 	16:01-17:00	   39	   39	   35	   25	   18	   16	   16	   21	   27	   30	   36	   42	
+ 	17:01-18:00	   21	   20	   14	    5	    1	    1	    2	    4	    7	   10	   14	   20	
+ 	18:01-19:00	    4	    2	    0	    0	    0	    0	    0	    0	    0	    0	    0	    2	
  	19:01-20:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	20:01-21:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	21:01-22:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	22:01-23:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	23:01-24:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
- 	 Max Hour  	  12 	  12 	  13 	  12 	  12 	  12 	  12 	  12 	  12 	  12 	  12 	  12 	
+ 	 Max Hour  	  13 	  13 	  13 	  13 	  13 	  13 	  13 	  13 	  13 	  13 	  13 	  13 	
  	 Min Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
 
  - Average Hourly Statistics for Global Horizontal Solar Radiation Wh/m≤
@@ -478,92 +644,92 @@ Note ** Definitions taken from associated "def" file.
  	 1:01- 2:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	 2:01- 3:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	 3:01- 4:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
- 	 4:01- 5:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    1	    1	
+ 	 4:01- 5:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	 5:01- 6:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
- 	 6:01- 7:00	   40	   15	    3	    0	    0	    0	    0	    0	   11	   65	  102	  104	
- 	 7:01- 8:00	  183	  168	  145	  121	   73	   48	   39	   76	  152	  240	  289	  278	
- 	 8:01- 9:00	  334	  343	  332	  301	  242	  207	  178	  224	  324	  405	  443	  432	
- 	 9:01-10:00	  463	  478	  490	  473	  386	  350	  312	  348	  450	  560	  575	  588	
- 	10:01-11:00	  595	  620	  601	  586	  508	  462	  409	  460	  544	  647	  666	  715	
- 	11:01-12:00	  657	  676	  679	  646	  566	  519	  474	  501	  587	  696	  729	  771	
- 	12:01-13:00	  673	  661	  708	  660	  562	  557	  499	  512	  621	  697	  725	  769	
- 	13:01-14:00	  662	  657	  649	  633	  542	  515	  462	  496	  577	  625	  705	  746	
- 	14:01-15:00	  585	  599	  583	  536	  445	  421	  390	  448	  493	  553	  593	  652	
- 	15:01-16:00	  495	  489	  458	  398	  321	  292	  288	  331	  391	  405	  448	  534	
- 	16:01-17:00	  361	  348	  289	  223	  161	  149	  149	  190	  234	  248	  299	  364	
- 	17:01-18:00	  200	  187	  119	   51	   14	   12	   21	   44	   70	   90	  128	  191	
- 	18:01-19:00	   41	   26	    3	    2	    1	    2	    2	    2	    2	    3	    4	   25	
- 	19:01-20:00	    2	    1	    1	    0	    0	    0	    0	    1	    0	    1	    1	    1	
+ 	 6:01- 7:00	    5	    1	    0	    0	    0	    0	    0	    0	    1	    7	   12	   11	
+ 	 7:01- 8:00	   22	   19	   16	   13	    8	    5	    4	    9	   18	   27	   33	   32	
+ 	 8:01- 9:00	   41	   38	   37	   33	   27	   23	   20	   26	   38	   46	   54	   52	
+ 	 9:01-10:00	   57	   56	   55	   51	   44	   40	   34	   41	   54	   62	   71	   69	
+ 	10:01-11:00	   69	   69	   70	   65	   56	   52	   45	   53	   67	   74	   83	   82	
+ 	11:01-12:00	   77	   78	   78	   73	   63	   60	   52	   60	   74	   80	   89	   90	
+ 	12:01-13:00	   79	   81	   81	   75	   65	   62	   54	   62	   75	   81	   89	   91	
+ 	13:01-14:00	   76	   78	   78	   70	   60	   58	   51	   59	   70	   75	   84	   86	
+ 	14:01-15:00	   68	   70	   68	   60	   50	   48	   43	   50	   60	   64	   72	   76	
+ 	15:01-16:00	   55	   57	   53	   45	   36	   34	   31	   37	   45	   49	   56	   61	
+ 	16:01-17:00	   39	   39	   35	   25	   18	   16	   16	   21	   27	   30	   36	   42	
+ 	17:01-18:00	   21	   20	   14	    5	    1	    1	    2	    4	    7	   10	   14	   20	
+ 	18:01-19:00	    4	    2	    0	    0	    0	    0	    0	    0	    0	    0	    0	    2	
+ 	19:01-20:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	20:01-21:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	21:01-22:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	22:01-23:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
  	23:01-24:00	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
- 	 Max Hour  	  13 	  12 	  13 	  13 	  12 	  13 	  13 	  13 	  13 	  13 	  12 	  12 	
+ 	 Max Hour  	  13 	  13 	  13 	  13 	  13 	  13 	  13 	  13 	  13 	  13 	  13 	  13 	
  	 Min Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
 
  - Average Hourly Statistics for Total Sky Cover %
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	 0:01- 1:00	   78	   74	   72	   75	   73	   75	   77	   77	   75	   78	   72	   73	
- 	 1:01- 2:00	   79	   75	   70	   73	   74	   75	   77	   76	   74	   78	   72	   71	
- 	 2:01- 3:00	   79	   74	   70	   73	   74	   75	   77	   76	   74	   78	   72	   72	
- 	 3:01- 4:00	   79	   75	   70	   72	   74	   75	   77	   77	   74	   78	   73	   71	
- 	 4:01- 5:00	   80	   74	   68	   70	   75	   77	   78	   77	   74	   78	   73	   72	
- 	 5:01- 6:00	   80	   75	   68	   70	   77	   78	   79	   77	   74	   78	   73	   72	
- 	 6:01- 7:00	   80	   75	   68	   69	   77	   79	   79	   77	   74	   79	   73	   72	
- 	 7:01- 8:00	   73	   73	   68	   69	   77	   79	   79	   77	   73	   67	   59	   60	
- 	 8:01- 9:00	   66	   62	   53	   51	   61	   60	   70	   70	   62	   61	   56	   54	
- 	 9:01-10:00	   62	   61	   52	   41	   50	   48	   62	   67	   59	   55	   53	   50	
- 	10:01-11:00	   57	   56	   52	   42	   46	   41	   60	   63	   59	   53	   53	   47	
- 	11:01-12:00	   56	   56	   53	   42	   45	   38	   57	   62	   59	   55	   52	   45	
- 	12:01-13:00	   57	   62	   51	   42	   47	   36	   54	   62	   55	   55	   52	   48	
- 	13:01-14:00	   55	   63	   54	   40	   45	   40	   57	   63	   59	   59	   50	   46	
- 	14:01-15:00	   56	   61	   51	   43	   50	   45	   60	   59	   59	   58	   52	   50	
- 	15:01-16:00	   53	   63	   55	   49	   55	   52	   63	   65	   57	   66	   56	   49	
- 	16:01-17:00	   59	   66	   64	   61	   66	   65	   71	   67	   63	   69	   60	   56	
- 	17:01-18:00	   64	   70	   75	   79	   66	   65	   74	   75	   76	   76	   71	   64	
- 	18:01-19:00	   76	   73	   75	   79	   66	   66	   74	   76	   76	   76	   71	   71	
- 	19:01-20:00	   76	   73	   74	   78	   68	   68	   75	   76	   76	   76	   71	   72	
- 	20:01-21:00	   77	   73	   73	   78	   70	   69	   75	   76	   75	   76	   71	   73	
- 	21:01-22:00	   77	   74	   72	   76	   70	   70	   76	   76	   76	   76	   72	   72	
- 	22:01-23:00	   78	   73	   72	   75	   70	   70	   76	   76	   76	   77	   72	   72	
- 	23:01-24:00	   78	   73	   72	   75	   70	   71	   76	   76	   76	   77	   72	   72	
- 	 Max Hour  	   7 	   6 	  18 	  19 	   8 	   7 	   7 	   8 	  18 	   7 	   5 	   1 	
- 	 Min Hour  	  16 	  11 	  13 	  14 	  12 	  13 	  13 	  15 	  13 	  11 	  14 	  12 	
+ 	 0:01- 1:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 1:01- 2:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 2:01- 3:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 3:01- 4:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 4:01- 5:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 5:01- 6:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 6:01- 7:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 7:01- 8:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 8:01- 9:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 9:01-10:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	10:01-11:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	11:01-12:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	12:01-13:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	13:01-14:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	14:01-15:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	15:01-16:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	16:01-17:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	17:01-18:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	18:01-19:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	19:01-20:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	20:01-21:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	21:01-22:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	22:01-23:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	23:01-24:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 Max Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
+ 	 Min Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
 
  - Average Hourly Statistics for Opaque Sky Cover %
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	 0:01- 1:00	   78	   74	   72	   75	   73	   75	   77	   77	   75	   78	   72	   73	
- 	 1:01- 2:00	   79	   75	   70	   73	   74	   75	   77	   76	   74	   78	   72	   71	
- 	 2:01- 3:00	   79	   74	   70	   73	   74	   75	   77	   76	   74	   78	   72	   72	
- 	 3:01- 4:00	   79	   75	   70	   72	   74	   75	   77	   77	   74	   78	   73	   71	
- 	 4:01- 5:00	   80	   74	   68	   70	   75	   77	   78	   77	   74	   78	   73	   72	
- 	 5:01- 6:00	   80	   75	   68	   70	   77	   78	   79	   77	   74	   78	   73	   72	
- 	 6:01- 7:00	   80	   75	   68	   69	   77	   79	   79	   77	   74	   79	   73	   72	
- 	 7:01- 8:00	   73	   73	   68	   69	   77	   79	   79	   77	   73	   67	   59	   60	
- 	 8:01- 9:00	   66	   62	   53	   51	   61	   60	   70	   70	   62	   61	   56	   54	
- 	 9:01-10:00	   62	   61	   52	   41	   50	   48	   62	   67	   59	   55	   53	   50	
- 	10:01-11:00	   57	   56	   52	   42	   46	   41	   60	   63	   59	   53	   53	   47	
- 	11:01-12:00	   56	   56	   53	   42	   45	   38	   57	   62	   59	   55	   52	   45	
- 	12:01-13:00	   57	   62	   51	   42	   47	   36	   54	   62	   55	   55	   52	   48	
- 	13:01-14:00	   55	   63	   54	   40	   45	   40	   57	   63	   59	   59	   50	   46	
- 	14:01-15:00	   56	   61	   51	   43	   50	   45	   60	   59	   59	   58	   52	   50	
- 	15:01-16:00	   53	   63	   55	   49	   55	   52	   63	   65	   57	   66	   56	   49	
- 	16:01-17:00	   59	   66	   64	   61	   66	   65	   71	   67	   63	   69	   60	   56	
- 	17:01-18:00	   64	   70	   75	   79	   66	   65	   74	   75	   76	   76	   71	   64	
- 	18:01-19:00	   76	   73	   75	   79	   66	   66	   74	   76	   76	   76	   71	   71	
- 	19:01-20:00	   76	   73	   74	   78	   68	   68	   75	   76	   76	   76	   71	   72	
- 	20:01-21:00	   77	   73	   73	   78	   70	   69	   75	   76	   75	   76	   71	   73	
- 	21:01-22:00	   77	   74	   72	   76	   70	   70	   76	   76	   76	   76	   72	   72	
- 	22:01-23:00	   78	   73	   72	   75	   70	   70	   76	   76	   76	   77	   72	   72	
- 	23:01-24:00	   78	   73	   72	   75	   70	   71	   76	   76	   76	   77	   72	   72	
- 	 Max Hour  	   7 	   6 	  18 	  19 	   8 	   7 	   7 	   8 	  18 	   7 	   5 	   1 	
- 	 Min Hour  	  16 	  11 	  13 	  14 	  12 	  13 	  13 	  15 	  13 	  11 	  14 	  12 	
+ 	 0:01- 1:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 1:01- 2:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 2:01- 3:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 3:01- 4:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 4:01- 5:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 5:01- 6:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 6:01- 7:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 7:01- 8:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 8:01- 9:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 9:01-10:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	10:01-11:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	11:01-12:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	12:01-13:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	13:01-14:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	14:01-15:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	15:01-16:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	16:01-17:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	17:01-18:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	18:01-19:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	19:01-20:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	20:01-21:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	21:01-22:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	22:01-23:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	23:01-24:00	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	   80	
+ 	 Max Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
+ 	 Min Hour  	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	   1 	
 
  - Monthly Calculated "undisturbed" Ground Temperatures** ∞C
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	   0.5 m  	 16.6	 17.7	 18.0	 17.7	 16.0	 14.3	 12.7	 11.5	 11.2	 11.8	 13.2	 14.9	
- 	   2.0 m  	 15.5	 16.6	 17.1	 17.1	 16.2	 15.0	 13.7	 12.6	 12.1	 12.2	 13.0	 14.2	
- 	   4.0 m  	 14.8	 15.6	 16.1	 16.3	 16.0	 15.2	 14.4	 13.5	 13.0	 12.9	 13.2	 13.9	
+ 	   0.5 m  	 17.6	 17.8	 17.3	 16.5	 14.4	 12.9	 11.9	 11.6	 12.2	 13.4	 15.0	 16.5	
+ 	   2.0 m  	 16.6	 17.0	 16.9	 16.5	 15.1	 13.9	 12.9	 12.4	 12.5	 13.3	 14.4	 15.6	
+ 	   4.0 m  	 15.7	 16.2	 16.3	 16.1	 15.3	 14.5	 13.7	 13.2	 13.1	 13.5	 14.1	 14.9	
 
    - **These ground temperatures should NOT BE USED in the GroundTemperatures object to compute building floor losses.
    -   The temperatures for 0.5 m depth can be used for GroundTemperatures:Surface.
@@ -574,21 +740,21 @@ Note ** Definitions taken from associated "def" file.
  - Heating/Cooling Degree Days/Hours from design conditions shown earlier in this report.
  - Monthly Weather File Heating/Cooling Degree Days/Hours
  	           	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	
- 	HDD base 10C	    0	    0	    0	    0	    0	    3	    1	   11	    1	    0	    0	    0	
- 	HDD base 18C	   25	    7	   24	   52	  118	  180	  204	  228	  187	  131	   83	   49	
+ 	HDD base 10C	    0	    0	    0	    0	    0	    1	    3	    1	    0	    0	    0	    0	
+ 	HDD base 18C	   24	    7	   23	   48	  117	  162	  211	  206	  186	  129	   76	   50	
 
- 	CDD base 10C	  240	  228	  226	  188	  130	   63	   45	   31	   54	  117	  157	  199	
- 	CDD base 18C	   16	   11	    2	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	CDD base 10C	  240	  227	  227	  192	  131	   79	   41	   43	   54	  119	  165	  198	
+ 	CDD base 18C	   17	   11	    2	    0	    0	    0	    0	    0	    0	    0	    0	    0	
 
- 	CDH base 20C	  483	  396	  318	  128	   10	    0	    0	    0	    0	    8	   74	  177	
- 	CDH base 23C	   70	   14	    6	    0	    0	    0	    0	    0	    0	    0	    0	    0	
+ 	CDH base 20C	  489	  395	  325	  112	   12	    0	    0	    0	    1	    8	  182	  177	
+ 	CDH base 23C	   73	   14	    5	    0	    0	    0	    0	    0	    0	    0	    8	    0	
  	CDH base 27C	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	    0	
 
-    - 1676 annual (wthr file) cooling degree-days (10∞C baseline)
-    -   16 annual (wthr file) heating degree-days (10∞C baseline)
+    - 1716 annual (wthr file) cooling degree-days (10∞C baseline)
+    -    6 annual (wthr file) heating degree-days (10∞C baseline)
 
     -   29 annual (wthr file) cooling degree-days (18∞C baseline)
-    - 1289 annual (wthr file) heating degree-days (18∞C baseline)
+    - 1239 annual (wthr file) heating degree-days (18∞C baseline)
 
  - Climate type "Cfb" (Kˆppen classification)**
  - Marine west coastal (warm summer, mild winter, rain all year, lat. 35-60∞S)
@@ -604,20 +770,20 @@ Note ** Definitions taken from associated "def" file.
 
  - Summer is Jan:Mar
      Extreme Summer Week (nearest maximum temperature for summer)
-     Extreme Hot Week Period selected: Jan 15:Jan 21, Maximum Temp=  25.64∞C, Deviation=| 6.216|∞C
+     Extreme Hot Week Period selected: Jan 15:Jan 21, Maximum Temp=  25.64∞C, Deviation=| 6.179|∞C
      Typical Summer Week (nearest average temperature for summer)
-     Typical Week Period selected: Feb  5:Feb 11, Average Temp=  17.70∞C, Deviation=| 0.032|∞C
+     Typical Week Period selected: Feb 26:Mar  4, Average Temp=  17.72∞C, Deviation=| 0.047|∞C
 
  - Winter is Jul:Sep
      Extreme Winter Week (nearest minimum temperature for winter)
-     Extreme Cold Week Period selected: Jul 29:Aug  4, Minimum Temp=   2.54∞C, Deviation=| 7.301|∞C
+     Extreme Cold Week Period selected: Aug 19:Aug 25, Minimum Temp=   2.89∞C, Deviation=| 7.281|∞C
      Typical Winter Week (nearest average temperature for winter)
-     Typical Week Period selected: Jul 22:Jul 28, Average Temp=  11.26∞C, Deviation=| 0.265|∞C
+     Typical Week Period selected: Sep 16:Sep 22, Average Temp=  11.46∞C, Deviation=| 0.036|∞C
 
  - Autumn is Apr:Jun
      Typical Autumn Week (nearest average temperature for autumn)
-     Typical Week Period selected: May 27:Jun  2, Average Temp=  14.15∞C, Deviation=| 0.005|∞C
+     Typical Week Period selected: Apr 29:May  5, Average Temp=  14.40∞C, Deviation=| 0.034|∞C
 
  - Spring is Oct:Dec
      Typical Spring Week (nearest average temperature for spring)
-     Typical Week Period selected: Oct 29:Nov  4, Average Temp=  15.14∞C, Deviation=| 0.158|∞C
+     Typical Week Period selected: Oct 29:Nov  4, Average Temp=  15.23∞C, Deviation=| 0.420|∞C
